@@ -1,0 +1,10 @@
+.chart-hover-host{position:relative}
+.chart-hover-canvas:focus-visible{outline:2px solid #2864e8;outline-offset:2px;border-radius:4px}
+.chart-hover-tooltip{position:absolute;z-index:10;pointer-events:none;max-width:calc(100% - 16px);padding:11px 13px;border-radius:7px;background:#182131;color:#fff;box-shadow:0 4px 16px #14213b24;font-size:12px;line-height:1.6;font-variant-numeric:tabular-nums}
+.chart-hover-tooltip[hidden]{display:none}
+.chart-hover-title{font-weight:600;margin-bottom:5px;overflow-wrap:anywhere}
+.chart-hover-row{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.chart-hover-dot{width:7px;height:7px;border-radius:50%;flex:none}
+.chart-hover-name{color:#d9e1ef;flex:1}
+.chart-hover-value{font-weight:600;margin-left:12px}
+@media(max-width:760px){.chart-hover-tooltip{font-size:11px;padding:9px 11px}}
