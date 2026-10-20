@@ -2,7 +2,7 @@
 
 面向门店评价管理与口碑改善场景的交互原型，集中展示评价处理、回复辅助、分析报告和运营改善任务。项目采用静态前端实现，适合直接浏览业务流程与界面交互。
 
-[在线体验](https://weibot-reputation-demo.pages.dev/) · [页面源码](index.html)
+[在线体验](https://reputation-demo.pages.dev/) · [页面源码](index.html)
 
 ## 功能展示
 
@@ -42,6 +42,6 @@ python3 -m http.server 8795 --bind 127.0.0.1
 
 ## 部署说明
 
-Cloudflare Pages 发布目录为仓库根目录，无需构建命令。当前项目使用 Direct Upload，GitHub 推送不会自动更新线上站点；修改页面后需使用已授权的 Wrangler 重新发布到 `weibot-reputation-demo` 项目。
+Cloudflare Pages 发布目录为仓库根目录，无需构建命令。当前项目使用 Direct Upload，GitHub 推送不会自动更新线上站点；修改页面后需使用已授权的 Wrangler 重新发布到 `reputation-demo` 项目。
 
 本仓库用于产品流程与前端交互展示，真实评价数据和平台回复链路需在完成官方授权后独立接入与验收。
