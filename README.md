@@ -1,4 +1,4 @@
-# WEIBOT 口碑运营 · 评价分析与运营工作台
+# 口碑运营 · AI 评价处理与运营分析工作台
 
 面向门店评价管理与口碑改善场景的交互原型，集中展示评价处理、回复辅助、分析报告和运营改善任务。项目采用静态前端实现，适合直接浏览业务流程与界面交互。
 
@@ -25,8 +25,8 @@
 ## 本地运行
 
 ```bash
-git clone https://github.com/geyaovip/weibot-reputation-demo.git
-cd weibot-reputation-demo
+git clone https://github.com/geyaovip/reputation-demo.git
+cd reputation-demo
 python3 -m http.server 8795 --bind 127.0.0.1
 ```
 
