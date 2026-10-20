@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
 <title>口碑运营 · AI口碑运营应用</title>
 <link rel="icon" href="data:,">
 <style>
@@ -486,7 +485,6 @@ body.mobile-nav-locked{overflow:hidden}
 @media(max-width:760px){
   .mobile-header.is-subpage .mobile-brand img{display:none}
   .mobile-header.is-subpage .mobile-brand{justify-content:center;font-size:16px}
-  .mobile-header.is-subpage #mobileNoticeButton{visibility:hidden;pointer-events:none}
   .content.mobile-list-mode .split-right,.content.mobile-list-mode .risk-workspace>.card:nth-child(2),.content.mobile-list-mode .report-preview{display:none}
   .content.mobile-list-mode .split-left,.content.mobile-list-mode .risk-workspace>.card:first-child,.content.mobile-list-mode .report-workspace>.card:first-child{border-bottom:0;margin-bottom:0}
   .content.mobile-list-mode .list-scroll{max-height:none!important;overflow:visible}
@@ -533,9 +531,8 @@ body.mobile-nav-locked{overflow:hidden}
 .ai-task-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;border-bottom:1px solid var(--line)}.ai-task-toolbar .tabs{border:0;padding:0}.ai-task-toolbar .tabs button{padding:6px 10px}.ai-task-list{padding:16px;display:grid;gap:10px;overflow:auto}.ai-task{border:1px solid var(--line);border-radius:10px;padding:14px}.ai-task-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.ai-task h3{margin:0;font-size:14px}.ai-task p{margin:5px 0 0;color:#566782;font-size:11px}.ai-task-meta{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0;color:var(--muted);font-size:10px}.ai-task-actions{display:flex;gap:7px;flex-wrap:wrap}.ai-task-evidence{margin-top:9px;padding:8px 10px;border-radius:7px;background:#f6f8fc;color:#536480;font-size:10px}.ai-task-actions button{height:29px;font-size:11px}.ai-home-entry{padding:14px 16px;margin-bottom:12px;background:linear-gradient(110deg,#f3f0ff,#fff);border-color:#e2dcff;display:flex;align-items:center;justify-content:space-between;gap:12px}.ai-home-entry h2{font-size:15px;margin:0}.ai-home-entry p{margin:4px 0 0;color:#697397;font-size:11px}.ai-home-entry .btn{background:#6d54df;border-color:#6d54df}.ai-home-entry .btn:hover{background:#583dca}
 @media(max-width:1000px){.ai-workspace{grid-template-columns:205px minmax(0,1fr)}}
 @media(max-width:760px){.ai-workspace{grid-template-columns:minmax(0,1fr);min-height:0}.ai-history,.ai-main,.ai-conversation,.ai-messages{min-width:0;width:100%}.ai-history{max-height:160px}.ai-history-list{display:flex;overflow-x:auto;padding:7px}.ai-history-item{min-width:145px}.ai-demo-note{display:none}.ai-messages{min-height:300px;max-height:55vh;padding:15px}.ai-main-head{padding:12px;flex-wrap:wrap}.ai-main-head .tabs{flex:none}.ai-message,.ai-bubble{min-width:0;max-width:100%}.ai-metrics{grid-template-columns:1fr 1fr}.ai-prompt-grid{grid-template-columns:1fr}.ai-home-entry{align-items:flex-start;flex-direction:column}}
-.ai-launcher{position:fixed;z-index:55;color:#24396b;cursor:pointer}
-.ai-launcher:focus-visible{outline:3px solid #577bff;outline-offset:3px}.ai-overlay{position:fixed;inset:0;z-index:60;display:none;background:rgba(15,28,59,.42);backdrop-filter:blur(3px)}.ai-overlay.open{display:block}.ai-overlay.open~.ai-launcher{display:none}body.ai-open{overflow:hidden}
-.drawer-overlay.open~.ai-launcher,.modal-overlay.open~.ai-launcher{visibility:hidden;pointer-events:none}
+
+.ai-overlay{position:fixed;inset:0;z-index:60;display:none;background:rgba(15,28,59,.42);backdrop-filter:blur(3px)}.ai-overlay.open{display:block}body.ai-open{overflow:hidden}
 .ai-dialog{position:absolute;right:24px;bottom:22px;width:min(760px,calc(100vw - 48px));height:min(560px,calc(100dvh - 56px));display:flex;flex-direction:column;overflow:hidden;border:1px solid #d9e2f6;border-radius:18px;background:#fff;box-shadow:0 28px 90px rgba(13,29,72,.32)}.ai-dialog-head{height:64px;flex:none;display:flex;align-items:center;gap:12px;padding:7px 16px;background:linear-gradient(105deg,#f0f2ff,#f8fbff 65%,#fff);border-bottom:1px solid #e4e9f5}.ai-dialog-head img{width:52px;height:52px;object-fit:contain;margin:-3px -4px -3px -7px}.ai-dialog-title{min-width:0;flex:1}.ai-dialog-title h2{margin:0;font-size:17px;color:#1d2c55}.ai-dialog-title small{display:block;margin-top:2px;color:#7180a0;font-size:10px}.ai-dialog-head .icon-button{width:36px;height:36px;border-radius:10px}.ai-panel-content{flex:1;min-height:0;overflow:hidden}
 .ai-dialog .ai-workspace{height:100%;min-height:0;grid-template-columns:188px minmax(0,1fr);gap:0}.ai-dialog .ai-workspace>.card{border:0;border-radius:0;box-shadow:none}.ai-dialog .ai-history{border-right:1px solid var(--line);background:#fbfcff}.ai-dialog .ai-history-head{padding:12px}.ai-dialog .ai-history-list{flex:1;min-height:0}.ai-dialog .ai-history-item{padding:9px}.ai-dialog .ai-main{min-height:0}.ai-dialog .ai-conversation{min-height:0}.ai-dialog .ai-messages{flex:1;min-height:0;max-height:none;padding:15px 17px}.ai-dialog .ai-main-head{padding:11px 16px}.modal-overlay{z-index:80}
 .ai-review-choice-list{display:grid;gap:8px;margin-top:12px}.ai-review-choice{display:block;width:100%;padding:10px 11px;border:1px solid var(--line);border-radius:9px;background:#fff;text-align:left;color:var(--ink)}.ai-review-choice:hover,.ai-review-choice:focus-visible{border-color:#8cacfa;background:#f7faff}.ai-review-choice strong,.ai-review-choice small,.ai-review-choice span{display:block}.ai-review-choice strong{font-size:11px}.ai-review-choice small{margin-top:2px;color:var(--muted);font-size:10px}.ai-review-choice span{margin-top:5px;color:#52627d;font-size:11px;line-height:1.45}.ai-inline-task{margin-top:12px}.ai-inline-task .ai-task{background:#f8faff}
@@ -656,13 +653,13 @@ body.ai-open{overflow:auto}
   .ai-composer .ai-send{width:36px;padding:0}
   .ai-thread-status{display:none}
 }
-/* 浮动入口：透明头像，靠边后缩成可再次唤起的把手 */
-.ai-launcher{left:calc(100vw - 74px);top:calc(100dvh - 74px);right:auto;bottom:auto;width:56px;height:56px;padding:0;display:grid;place-items:center;gap:0;overflow:hidden;border:0;border-radius:50%;background:transparent;box-shadow:none;touch-action:none;user-select:none;-webkit-user-select:none;transition:left .22s ease,top .22s ease,transform .18s ease}
-.ai-launcher img{width:57px;height:57px;margin:0;object-fit:contain;pointer-events:none;filter:none}
-.ai-launcher:hover{transform:scale(1.04);box-shadow:none}
-.ai-launcher.is-dragging,.ai-launcher.is-dragging:hover{transition:none;transform:scale(1.06);cursor:grabbing;box-shadow:none}
-@media(max-width:760px){.ai-launcher{left:calc(100vw - 70px);top:calc(100dvh - 70px);right:auto;bottom:auto;width:54px;height:54px;padding:0;background:transparent}.ai-launcher img{width:55px;height:55px;margin:0}}
-@media(prefers-reduced-motion:reduce){.ai-launcher{transition:none}}
+
+
+
+
+
+
+
 .improvement-list{padding:0 18px}.improvement-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 0;border-bottom:1px solid var(--line)}.improvement-row:last-child{border-bottom:0}.improvement-row-main{min-width:0}.improvement-row-main strong{display:block;font-size:13px;line-height:1.5}.improvement-row-main small{display:block;color:var(--muted);font-size:11px;margin-top:4px;line-height:1.55}.improvement-row-actions{display:flex;align-items:center;gap:8px;flex:none}.improvement-drawer .field{margin-top:16px}.improvement-drawer .detail-text{margin-top:8px}.improvement-drawer .field textarea{min-height:84px}
 @media(max-width:600px){.improvement-row{align-items:flex-start;flex-direction:column}.improvement-row-actions{width:100%;justify-content:space-between}}
 .analysis-sort-note{color:var(--muted);font-size:11px;font-weight:400}
@@ -770,22 +767,24 @@ body.ai-open{overflow:auto}
 }
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 </style>
-<link rel="stylesheet" href="assets/ai-home.css">
+<link rel="stylesheet" href="assets/ai-home.css?v=20261019-reviewcards2">
 <link rel="stylesheet" href="assets/chart-hover.css">
+<link rel="stylesheet" href="assets/operations-upgrade.css?v=20261019-analysis-cleanup-v4">
+<link rel="stylesheet" href="assets/ai-chat.css?v=20261020-chat2">
 </head>
 <body>
 <div class="app">
   <header class="mobile-header" aria-label="移动端导航栏">
     <button id="mobileMenuButton" class="mobile-header-button" aria-label="打开导航菜单" aria-expanded="false"><i data-lucide="menu"></i></button>
     <div class="mobile-brand"><img id="mobileBrandLogo" alt=""><span id="mobileHeaderTitle">口碑运营</span></div>
-    <button id="mobileNoticeButton" class="mobile-header-button" aria-label="消息通知"><i data-lucide="bell"></i><span class="dot"></span></button>
+    <button id="aiMobileEntry" class="ask-ai-entry" type="button" aria-label="询问 AI" aria-haspopup="dialog" aria-controls="aiOverlay" aria-expanded="false"><span class="ai-entry-icon" aria-hidden="true"></span><span class="ask-ai-label">询问 AI</span></button>
   </header>
   <div id="mobileNavOverlay" class="mobile-nav-overlay" aria-hidden="true"></div>
   <aside class="sidebar">
     <div class="brand"><img id="brandLogo" class="brand-logo-img" alt="口碑运营"><div><strong>口碑运营</strong><small>让好口碑带来更多生意</small></div><button id="mobileDrawerClose" class="mobile-drawer-close" aria-label="关闭导航菜单"><i data-lucide="x"></i></button></div>
     <nav class="side-nav" aria-label="主导航">
-      <button class="active" data-view="ai-home" aria-label="首页"><i data-lucide="sparkles"></i><span>首页</span></button>
-      <button data-view="home" aria-label="工作台"><i data-lucide="layout-dashboard"></i><span>工作台</span></button>
+      <button class="active" data-view="ai-home" aria-label="工作台"><i data-lucide="sparkles"></i><span>工作台</span></button>
+      <button data-view="home" aria-label="数据概览"><i data-lucide="layout-dashboard"></i><span>数据概览</span></button>
       <button data-view="reviews" aria-label="评价管理"><i data-lucide="message-square-plus"></i><span>评价管理</span></button>
       <button data-view="risks" aria-label="风险中心"><i data-lucide="shield-alert"></i><span>风险中心</span></button>
       <button data-view="analysis" aria-label="口碑分析"><i data-lucide="chart-no-axes-combined"></i><span>口碑分析</span></button>
@@ -810,17 +809,18 @@ body.ai-open{overflow:auto}
       </div>
     </div>
   </aside>
-  <main class="main"><div id="content" class="content"></div></main>
+  <main class="main"><header class="desktop-ai-header"><button id="aiDesktopEntry" class="ask-ai-entry" type="button" aria-label="询问 AI" aria-haspopup="dialog" aria-controls="aiOverlay" aria-expanded="false"><span class="ai-entry-icon" aria-hidden="true"></span><span class="ask-ai-label">询问 AI</span></button></header><div id="content" class="content"></div></main>
 </div>
 <div id="drawerOverlay" class="drawer-overlay" aria-hidden="true"><section class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle"><header><h2 id="drawerTitle"></h2><button class="icon-button" data-close-drawer aria-label="关闭"><i data-lucide="x"></i></button></header><div id="drawerBody" class="drawer-body"></div><footer id="drawerFoot"></footer></section></div>
 <div id="modalOverlay" class="modal-overlay" aria-hidden="true"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><header><h2 id="modalTitle"></h2><button class="icon-button" data-close-modal aria-label="关闭"><i data-lucide="x"></i></button></header><div id="modalBody" class="modal-body"></div><footer id="modalFoot"></footer></section></div>
-<div id="aiOverlay" class="ai-overlay" aria-hidden="true"><section class="ai-dialog" role="dialog" aria-modal="false" aria-labelledby="aiDialogTitle"><header class="ai-dialog-head"><img src="assets/ai-assistant-launcher.png" alt=""><div class="ai-dialog-title"><h2 id="aiDialogTitle" tabindex="-1">知言 AI 助手</h2></div><div class="ai-dialog-actions"><button id="aiHistoryToggle" class="icon-button" type="button" aria-label="查看历史会话" aria-expanded="false" title="历史会话"><i data-lucide="history"></i></button><button id="aiNewThread" class="icon-button" type="button" aria-label="新建对话" title="新建对话"><i data-lucide="square-pen"></i></button><span class="ai-dialog-divider" aria-hidden="true"></span><button id="aiClose" class="icon-button" type="button" aria-label="关闭 AI 助手" title="关闭 AI 助手"><i data-lucide="x"></i></button></div></header><div id="aiPanelContent" class="ai-panel-content"></div></section></div>
-<button id="aiLauncher" class="ai-launcher" type="button" aria-label="打开知言 AI 助手" aria-description="可拖动位置，靠近屏幕左右边缘可收起；按左右方向键也可贴边" aria-haspopup="dialog" aria-expanded="false" aria-controls="aiOverlay"><img src="assets/ai-assistant-launcher.png" alt=""></button>
+<div id="aiOverlay" class="ai-overlay" aria-hidden="true"><section class="ai-dialog" role="dialog" aria-modal="false" aria-label="AI 对话"><header class="ai-dialog-head"><button id="aiHistoryToggle" type="button" aria-label="查看历史对话" aria-haspopup="dialog" aria-controls="aiChatHistoryMenu" aria-expanded="false"><span id="aiDialogTitle">新对话</span><i data-lucide="chevron-down"></i></button><div class="ai-dialog-actions"><button id="aiNewThread" class="icon-button" type="button" aria-label="新建对话" title="新建对话"><i data-lucide="plus"></i></button><button id="aiClose" class="icon-button" type="button" aria-label="关闭 AI 对话" title="关闭 AI 对话"><i data-lucide="x"></i></button></div></header><div id="aiChatHistoryRoot"></div><div id="aiPanelContent" class="ai-panel-content"></div></section></div>
 <div id="toast" class="toast" role="status"></div>
 <div id="loginScreen" class="login-screen hidden" aria-hidden="true"><section class="login-card"><img id="loginBrandLogo" alt="口碑运营"><h1>口碑运营</h1><p>当前会话已结束，请重新登录。</p><button class="btn" id="loginAgain">重新登录</button></section></div>
 <script src="assets/lucide.min.js"></script>
-<script src="assets/ai-home.js"></script>
+<script src="assets/ai-home.js?v=20261019-analysis-cleanup-v4"></script>
 <script src="assets/chart-hover.js"></script>
+<script src="assets/operations-upgrade.js?v=20261019-analysis-cleanup-v4"></script>
+<script src="assets/report-pdf.js?v=20261019-reviewcards2"></script>
 <script>
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const DEMO_NOW=new Date();
@@ -868,10 +868,10 @@ PLATFORM_LOGOS.mtg=PLATFORM_LOGOS.mt;
 const refreshIcons=()=>{if(window.lucide)lucide.createIcons({strokeWidth:1.9})};
 const app={
   view:'ai-home',mobileDetail:null,mobileOrigin:null,mobileListScroll:0,store:'all',range:7,ranges:{home:7,analysis:30},homeTab:'all',homeTaskTab:'active',homeFocusTab:null,selectedReview:null,
-  riskTab:'all',riskSeverity:'all',riskIssue:'all',riskPlatform:'all',riskQuery:'',riskDateFrom:'',riskDateTo:'',riskFiltersOpen:false,riskPage:1,riskPageSize:5,selectedRisk:null,analysisIssue:null,analysisSection:'overview',analysisPlatform:'all',reportTab:'daily',selectedReport:null,
+  riskTab:'all',riskSeverity:'all',riskPlatform:'all',riskQuery:'',riskDateFrom:'',riskDateTo:'',riskFiltersOpen:true,riskPage:1,riskPageSize:5,selectedRisk:null,analysisIssue:null,analysisSection:'overview',analysisPlatform:'all',reportTab:'daily',selectedReport:null,
   storeView:'list',selectedStore:null,storeDetailTab:'overview',settingsTab:'reply',accountTab:'members',noticeTab:'all',integrationTab:'accounts',
   aiThreadId:null,aiThreads:[],aiTasks:[],aiInput:'',aiHistoryOpen:false,
-  reviewFilters:{platform:'all',status:'all',sentiment:'all',issue:'all',period:'all',q:'',replyOrigin:'all',dateFrom:'',dateTo:'',replyDateFrom:'',replyDateTo:''},filterDrafts:{},reviewFiltersOpen:false,reportSnapshots:{},
+  reviewFilters:{platform:'all',status:'all',sentiment:'all',issue:'all',period:'all',q:'',replyOrigin:'all',dateFrom:'',dateTo:'',replyDateFrom:'',replyDateTo:''},filterDrafts:{},reportSnapshots:{},
   storeFilters:{region:'all',status:'all',connection:'all',q:''},storeFiltersOpen:false,
   connectionStep:0,connectionDraft:null,syncDone:false,reviewPage:1,reviewPageSize:25,lastFocusedElement:null,
   notifications:[
@@ -880,7 +880,7 @@ const app={
     {id:'n4',type:'system',title:'大众点评连接同步异常',detail:'钟楼店的大众点评连接最近一次同步失败，评价与评分数据可能暂时延迟。',time:'今天 12:05',store:'钟楼店',read:true,target:'stores',targetId:'zhonglou'},
     {id:'n5',type:'report',title:'上周口碑运营周报',detail:'覆盖5家门店，统计'+closedReportPeriods('weekly')[0].range+'的评价与风险事件。',time:closedReportPeriods('weekly')[0].generatedAt,store:'全部门店',read:true,target:'reports',targetId:'weekly'}
   ],
-  settings:{replyModeNegative:'review',replyModePositive:'auto',tone:'自然、真诚、克制',brand:'禾味里',salutation:'您好',intro:'专注本地特色餐饮，重视真实顾客反馈与持续改善。',blocked:'绝对没问题、保证不会再发生、肯定是您的问题'},replySettingsDraft:null,
+  settings:{replyModeNegative:'auto',replyModePositive:'auto',tone:'自然、真诚、克制',brand:'禾味里',salutation:'您好',intro:'专注本地特色餐饮，重视真实顾客反馈与持续改善。',blocked:'绝对没问题、保证不会再发生、肯定是您的问题'},replySettingsDraft:null,
   members:[
     {id:'m1',name:'张店长',email:'zhang@heweili.example',role:'brand',scope:'全品牌 · 5家门店',status:'active',lastActive:'刚刚',current:true},
     {id:'m2',name:'陈运营',email:'chen@heweili.example',role:'regional',scope:'曲江店、钟楼店',status:'active',lastActive:'今天 09:42'},
@@ -1064,9 +1064,9 @@ function replyInPeriod(r,period,now=new Date()){if(!isReplied(r))return false;co
 function autoReplyInPeriod(r,period,now=new Date()){return isAutoReplied(r)&&replyInPeriod(r,period,now)}
 function autoReplyRows(period='all'){return queueReviews().filter(r=>autoReplyInPeriod(r,period)).sort((a,b)=>autoReplyDate(b)-autoReplyDate(a)||a.id.localeCompare(b.id))}
 function autoReplyTimeLabel(r){const date=autoReplyDate(r);if(!date)return '—';const time=String(date.getHours()).padStart(2,'0')+':'+String(date.getMinutes()).padStart(2,'0'),today=new Date(DEMO_NOW);today.setHours(0,0,0,0);const yesterday=new Date(today);yesterday.setDate(yesterday.getDate()-1);return date>=today?'今天 '+time:date>=yesterday?'昨天 '+time:(date.getMonth()+1)+'月'+date.getDate()+'日 '+time}
-function openAutoReplies(period='all'){resetReviewFilters();const f=app.reviewFilters;f.status='replied';f.replyOrigin='auto';if(period!=='all'){f.replyDateFrom=dateISO(dateAgo(period==='today'?0:Number(period)-1));f.replyDateTo=dateISO(DEMO_NOW)}app.reviewFiltersOpen=true;navigate('reviews')}
+function openAutoReplies(period='all'){resetReviewFilters();const f=app.reviewFilters;f.status='replied';f.replyOrigin='auto';if(period!=='all'){f.replyDateFrom=dateISO(dateAgo(period==='today'?0:Number(period)-1));f.replyDateTo=dateISO(DEMO_NOW)}navigate('reviews')}
 function reviewDateRange(f=app.reviewFilters){if(f.dateFrom&&f.dateTo)return {from:f.dateFrom,to:f.dateTo};if(f.period==='all')return {from:'',to:''};return {from:dateISO(dateAgo(f.period==='today'?0:Number(f.period)-1)),to:dateISO(DEMO_NOW)}}
-function appliedListFilters(scope){return scope==='reviews'?{...app.reviewFilters,store:app.store}:scope==='risks'?{store:app.store,platform:app.riskPlatform,status:app.riskTab,severity:app.riskSeverity,issue:app.riskIssue,q:app.riskQuery,dateFrom:app.riskDateFrom,dateTo:app.riskDateTo}:{...app.storeFilters}}
+function appliedListFilters(scope){return scope==='reviews'?{...app.reviewFilters,store:app.store}:scope==='risks'?{store:app.store,platform:app.riskPlatform,status:app.riskTab,severity:app.riskSeverity,q:app.riskQuery,dateFrom:app.riskDateFrom,dateTo:app.riskDateTo}:{...app.storeFilters}}
 function listFilterDraft(scope){
   if(!app.filterDrafts[scope])app.filterDrafts[scope]=appliedListFilters(scope);
   return app.filterDrafts[scope];
@@ -1076,7 +1076,7 @@ function filterActions(scope,canReset){return '<div class="filter-actions"><butt
 function applyListFilters(scope){
   const d=listFilterDraft(scope);
   if(scope==='reviews'){const {store,...filters}=d;app.store=store;app.reviewFilters={...filters,q:filters.q.trim()};app.reviewPage=1;app.selectedReview=null}
-  else if(scope==='risks'){app.store=d.store;app.riskPlatform=d.platform;app.riskTab=d.status;app.riskSeverity=d.severity;app.riskIssue=d.issue;app.riskQuery=d.q.trim();app.riskDateFrom=d.dateFrom;app.riskDateTo=d.dateTo;app.riskPage=1;app.selectedRisk=null}
+  else if(scope==='risks'){app.store=d.store;app.riskPlatform=d.platform;app.riskTab=d.status;app.riskSeverity=d.severity;app.riskQuery=d.q.trim();app.riskDateFrom=d.dateFrom;app.riskDateTo=d.dateTo;app.riskPage=1;app.selectedRisk=null}
   else app.storeFilters={...d,q:d.q.trim()};
   delete app.filterDrafts[scope];render();
 }
@@ -1089,9 +1089,14 @@ function bindListFilterControls(scope,fields){
   }
 }
 function dateInRange(value,range){if(!range.from&&!range.to)return true;if(!value)return false;const date=value instanceof Date?value:new Date(value);if(!Number.isFinite(date.getTime()))return false;const day=dateISO(date);return (!range.from||day>=range.from)&&(!range.to||day<=range.to)}
-function reviewDate(r){return new Date(dateISO(dateAgo(r.daysAgo))+'T'+r.time+':00')}
+function reviewDate(r){return r.publishedAt?new Date(r.publishedAt):new Date(dateISO(dateAgo(r.daysAgo))+'T'+r.time+':00')}
 function rangeLabel(range){if(!range.from||!range.to)return '全部时间';const from=range.from.replaceAll('-','/'),to=range.to.replaceAll('-','/');return from===to?from:from+' — '+(from.slice(0,4)===to.slice(0,4)?to.slice(5):to)}
 function dateRangeTrigger(scope,range,disabled=false){const label={review:'选择评价日期范围',reply:'选择回复日期范围',risk:'选择风险识别日期范围'}[scope];return '<button type="button" class="date-range-trigger" id="'+scope+'DateRange" data-calendar-scope="'+scope+'" '+(disabled?'disabled ':'')+'aria-haspopup="dialog" aria-label="'+label+'" title="'+esc(disabled?'待回复评价没有回复时间':range.from?range.from+' 至 '+range.to:'全部时间')+'">'+icon('calendar-days')+'<span class="date-range-value">'+esc(rangeLabel(range))+'</span>'+icon('chevron-down')+'</button>'}
+// 统一样例时钟，避免出现评价尚未发生、回复却已发布的记录。
+app.reviews.filter(r=>r.daysAgo===0&&reviewDate(r)>DEMO_NOW).forEach((r,i)=>{
+ const nowMinute=DEMO_NOW.getHours()*60+DEMO_NOW.getMinutes(),minute=Math.max(0,nowMinute-2-i%45);
+ r.time=String(Math.floor(minute/60)).padStart(2,'0')+':'+String(minute%60).padStart(2,'0');
+});
 app.reviews.filter(r=>r.risk!=='normal').forEach(r=>{r.riskDetectedAt=reviewDate(r).toISOString()}); // Explicit risk-recognition timestamps in local fixtures.
 function openDateCalendar(scope){
   const f=listFilterDraft(scope==='risk'?'risks':'reviews'),range=scope==='review'?reviewDateRange(f):scope==='reply'?{from:f.replyDateFrom,to:f.replyDateTo}:{from:f.dateFrom,to:f.dateTo},initial=range.to?new Date(range.to+'T00:00:00'):new Date(DEMO_NOW);
@@ -1123,9 +1128,14 @@ function openDateCalendar(scope){
   };
   draw();
 }
-// Local fixtures: the remaining successful replies demonstrate human-confirmed publication.
-// This is not a fallback for attributing imported platform replies without evidence.
-app.reviews.filter(isReplied).forEach(r=>{if(!r.reply)r.reply=sampleReplyResult(replyGenerationInput(r)).text;if(!r.replyOrigin)r.replyOrigin='manual-sample'});
+// Local fixtures carry explicit simulated reply origins. Imported replies need actual provenance.
+app.reviews.filter(isReplied).forEach(r=>{
+  if(!r.reply)r.reply=sampleReplyResult(replyGenerationInput(r)).text;
+  if(r.replyOrigin)return;
+  const safePositive=r.risk==='normal'&&r.rating>=4&&reviewSentiment(r).key==='good';
+  r.replyOrigin=safePositive?'auto-sample':'manual-sample';
+  if(safePositive)r.replyPublishedAt=new Date(Math.min(reviewDate(r).getTime()+120000,DEMO_NOW.getTime())).toISOString();
+});
 // Prepare pending sample drafts once at ingestion, never during page rendering.
 app.reviews.filter(isReplyPending).forEach(r=>{if(!r.draft){r.draftGeneration=sampleReplyResult(replyGenerationInput(r));r.draft=r.draftGeneration.text}});
 const statusLabel=s=>({'pending':'待回复','replied':'已回复','risk-new':'待处理','handling':'处理中','processed':'已办结','appeal-new':'待处理','appealing':'平台处理中','appeal-done':'已办结','done':'已办结'}[s]||'待处理');
@@ -1166,8 +1176,8 @@ function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show'
 function storeScopeControl(){return '<select id="localStoreScope" class="page-store-select" aria-label="门店范围"><option value="all" '+(app.store==='all'?'selected':'')+'>全部门店（'+app.stores.length+'家）</option>'+app.stores.map(s=>'<option value="'+s.id+'" '+(app.store===s.id?'selected':'')+'>'+esc(s.name)+'</option>').join('')+'</select>'}
 function updateNoticeBadge(){
   const unread=app.notifications.filter(n=>!n.read).length;
-  $$('#noticeButton .dot,#mobileNoticeButton .dot').forEach(dot=>dot.classList.toggle('hidden',unread===0));
-  ['#noticeButton','#mobileNoticeButton'].forEach(selector=>{const button=$(selector);if(button)button.setAttribute('aria-label',unread?'消息通知，'+unread+'条未读':'消息通知')});
+  $$('#noticeButton .dot').forEach(dot=>dot.classList.toggle('hidden',unread===0));
+  ['#noticeButton'].forEach(selector=>{const button=$(selector);if(button)button.setAttribute('aria-label',unread?'消息通知，'+unread+'条未读':'消息通知')});
 }
 const isMobileView=()=>window.matchMedia('(max-width:760px)').matches;
 function mobileSubpage(){
@@ -1201,7 +1211,7 @@ function backMobileSubpage(){
     app.mobileDetail=null;render();requestAnimationFrame(()=>window.scrollTo(0,app.mobileListScroll));return;
   }
   if(app.view==='stores'&&app.storeView==='detail'){app.storeView='list';render();window.scrollTo(0,0);return}
-  if(app.view==='notifications'){navigate('home');return}
+  if(app.view==='notifications'){navigate('ai-home');return}
 }
 function navigate(view,detail=false,rememberOrigin=true){
   app.mobileOrigin=rememberOrigin&&detail&&view!==app.view&&isMobileView()?{view:app.view,store:app.lastRenderedStore||app.store,detail:app.mobileDetail===app.view,storeDetail:app.view==='stores'&&app.storeView==='detail',scrollY:window.scrollY}:null;
@@ -1237,6 +1247,12 @@ function render(){
   if(focused&&!focused.isConnected){const replacement=focusId?document.getElementById(focusId):focusAttr?document.querySelector('['+focusAttr.name+'="'+CSS.escape(focusAttr.value)+'"]'):null;replacement?.focus({preventScroll:true})}
 }
 function enhanceRecordTables(){
+  // Native table minimum sizing can expand a clipped table beyond the page.
+  // Keep chart data accessible inside a genuinely one-pixel clipping wrapper.
+  $$('table.sr-only', $('#content')).forEach(table=>{
+    const wrapper=document.createElement('div');wrapper.className='sr-only';
+    table.classList.remove('sr-only');table.before(wrapper);wrapper.appendChild(table);
+  });
   $$('.home-ranking-card table,.store-matrix table,.matching-table,.member-table,.role-permission-table,.report-preview .report-table-wrap table').forEach(table=>{
     table.classList.add('mobile-record-table');const labels=$$('thead th',table).map(th=>th.textContent.trim());
     $$('tbody tr',table).forEach(row=>$$('td',row).forEach((cell,i)=>{cell.dataset.label=labels[i]||''}));
@@ -1323,7 +1339,7 @@ function renderHome(){
   const ranking=homePriorityStores();
   const queue=queueReviews(),today=queue.filter(r=>r.daysAgo===0),todayBad=today.filter(r=>r.rating<=3).length;
   const pendingCurrent=queue.filter(isReplyPending).length,lowPending=queue.filter(r=>isReplyPending(r)&&r.rating<=3).length,riskCurrent=queue.filter(isRiskPending).length;
-  let out=titleBlock('工作台');
+  let out=titleBlock('数据概览');
   out+='<div class="kpi-grid">'+kpiCard('今日评价',String(today.length),'message-circle','','reviews','new')+
     kpiCard('今日差评',String(todayBad),'frown','red','reviews','bad')+
     kpiCard('今日 AI 自动回复',String(autoReplyRows('today').length),'sparkles','ai','reviews','auto-today')+
@@ -1421,7 +1437,7 @@ function filteredReviews(){
    .filter(r=>f.sentiment==='all'||f.sentiment==='good'&&r.rating>=4||f.sentiment==='bad'&&r.rating<=3)
    .filter(r=>f.issue==='all'||reviewIssueCategories(r).includes(f.issue))
    .filter(r=>!f.q||(r.text+r.nickname+r.tags.join('')+storeBy(r.storeId)?.name).includes(f.q))
-   .sort((a,b)=>f.replyOrigin==='auto'||!!f.replyDateFrom?autoReplyDate(b)-autoReplyDate(a)||a.id.localeCompare(b.id):a.daysAgo-b.daysAgo||b.time.localeCompare(a.time));
+   .sort((a,b)=>f.replyOrigin==='auto'||!!f.replyDateFrom?autoReplyDate(b)-autoReplyDate(a)||a.id.localeCompare(b.id):reviewDate(b)-reviewDate(a)||b.id.localeCompare(a.id));
 }
 function reviewMediaStack(r,extraClass=''){
   const media=reviewMedia(r);if(!media.length)return '';
@@ -1429,7 +1445,7 @@ function reviewMediaStack(r,extraClass=''){
 }
 function reviewDetailMedia(r){
   const media=reviewMedia(r);if(!media.length)return '';
-  return '<div class="review-detail-media">'+media.map((src,i)=>'<img src="'+src+'" alt="顾客上传图片'+(i+1)+'">').join('')+'</div>';
+  return '<div class="review-detail-media">'+media.map((src,i)=>'<button type="button" class="ops-image-open" data-ops-image="'+r.id+'" data-ops-image-index="'+i+'" aria-label="查看顾客原图'+(i+1)+'"><img src="'+src+'" alt="顾客上传图片'+(i+1)+'"></button>').join('')+'</div>';
 }
 function reviewListItem(r){
   const riskBadge=r.risk==='high'?'<span class="pill red">高风险</span>':r.risk==='attention'?'<span class="pill amber">一般风险</span>':'';
@@ -1446,7 +1462,7 @@ function renderReviewDetail(r){
   out+='<div class="detail-section"><h3>顾客原始评价</h3><div class="detail-meta"><span>'+esc(r.nickname)+' · '+starRating(r.rating,true)+'</span><span class="muted">评价编号 '+r.id.toUpperCase()+'</span></div><div class="detail-text" style="margin-top:10px">'+esc(r.text)+'</div>'+reviewDetailMedia(r)+'</div>';
   out+='<div class="detail-section"><h3>评价识别</h3><div class="detail-kv review-recognition"><div><small>情绪</small><strong>'+emotions+'</strong></div><div><small>风险等级</small><span class="review-risk-value"><strong>'+riskLabel(r.risk)+'</strong>'+(isRisk?'<button class="link-btn review-risk-link" data-review-risk="'+r.id+'" aria-label="查看风险详情"><span class="review-risk-label-full">风险详情</span><span class="review-risk-label-short">详情</span>'+icon('chevron-right')+'</button>':'')+'</span></div></div><div class="detail-tag-editor"><small>问题标签</small><div class="tag-row detail-issue-tags">'+(categoryNames.length?categoryNames.map(t=>'<span class="tag">'+esc(t)+'</span>').join(''):'<span class="muted">未标注</span>')+'<button class="tag-edit-icon" type="button" data-edit-review-categories="'+r.id+'" aria-label="编辑问题标签" title="编辑问题标签">'+icon('pencil')+'</button></div></div>'+(isAppeal?'<div class="inline-actions"><button class="btn-outline" data-appeal="'+r.id+'">'+(riskCaseStatus(r)==='closed'?(r.appeal?.status==='finished'?'查看申诉结果':'查看处理记录'):!r.appeal?'登记平台申诉':r.appeal.status==='submitted'?'更新申诉结果':'查看申诉结果')+'</button></div>':'')+'</div>';
   if(isReplyPending(r))out+='<div class="detail-section"><div class="review-section-heading"><h3>回复草稿</h3><div class="inline-actions">'+(r.draftHistory?.length?'<button class="link-btn" data-restore-draft="'+r.id+'">恢复上一版</button>':'')+'<button class="link-btn" data-regen="'+r.id+'">'+icon('refresh-cw')+'重新生成</button></div></div><textarea class="reply-editor" id="replyEditor" aria-label="回复内容">'+esc(draftText)+'</textarea>'+(!canReply?'<div class="capability-banner">'+icon('info')+'<span>'+platformBy(r.platformId)?.name+'当前门店连接异常，请先恢复连接。回复内容可先保存为草稿。</span></div>':'')+'<div class="inline-actions"><button class="btn-subtle" data-save-draft="'+r.id+'">保存草稿</button><button class="btn" data-confirm-reply="'+r.id+'" '+(!canReply?'disabled':'')+'>确认回复</button></div></div>';
-  else out+='<div class="detail-section"><h3>平台回复</h3>'+(isAutoReplied(r)?'<div class="detail-meta" style="margin-bottom:10px"><span class="pill blue">AI自动回复</span><span class="muted">'+esc(autoReplyTimeLabel(r))+'</span></div>':'')+'<div class="detail-text">'+esc(r.reply||'该条样例未提供回复正文。')+'</div></div>';
+  else out+='<div class="detail-section"><h3>平台回复</h3>'+(isAutoReplied(r)?'<div class="detail-meta" style="margin-bottom:10px"><span class="pill blue">AI自动回复</span><span class="muted">'+esc(autoReplyTimeLabel(r))+'</span></div>':'')+'<div class="detail-text">'+esc(r.reply||'暂无回复正文')+'</div></div>';
   return out+'</div>';
 }
 // Production: the server generates every new reply with a language model.
@@ -1552,7 +1568,7 @@ function renderReviews(){
   const applied=app.reviewFilters,f=listFilterDraft('reviews'),activeCount=(app.store!=='all'?1:0)+['platform','status','sentiment','issue','replyOrigin'].filter(k=>applied[k]!=='all').length+(applied.q?1:0)+(reviewDateRange().from?1:0)+(applied.replyDateFrom?1:0);
   const head=titleBlock('评价管理','<button class="btn" id="syncReviews">'+icon('refresh-cw')+' 同步评价</button>','review-page-head');
   const field=(label,id,content)=>'<div class="review-filter-field"><label for="'+id+'">'+label+'</label>'+content+'</div>';
-  const filter='<div class="review-filter-panel '+(app.reviewFiltersOpen?'expanded':'')+'"><button class="review-filter-mobile-toggle" id="toggleReviewFilters" aria-expanded="'+app.reviewFiltersOpen+'"><span>筛选条件</span>'+icon(app.reviewFiltersOpen?'chevron-up':'sliders-horizontal')+'</button><div class="review-filter-grid reviews-filter-grid">'+
+  const filter='<div class="review-filter-panel expanded"><div class="review-filter-grid reviews-filter-grid">'+
     field('搜索评价','reviewSearch','<input id="reviewSearch" placeholder="评价内容、顾客昵称或门店" value="'+esc(f.q)+'">')+
     field('门店','reviewStore','<select id="reviewStore"><option value="all">全部门店</option>'+app.stores.map(s=>'<option value="'+s.id+'" '+(f.store===s.id?'selected':'')+'>'+s.name+'</option>').join('')+'</select>')+
     field('平台','reviewPlatform','<select id="reviewPlatform"><option value="all">全部平台</option>'+app.platforms.map(p=>'<option value="'+p.id+'" '+(f.platform===p.id?'selected':'')+'>'+p.short+'</option>').join('')+'</select>')+
@@ -1610,7 +1626,7 @@ function renderRiskIssueTags(r){const names=reviewIssueTagNames(r);return names.
 function riskSummary(r){
   return r.riskEvidence&&r.text.includes(r.riskEvidence)?'顾客反馈：“'+esc(r.riskEvidence)+'”。':'请结合来源评价和相关记录核查，当前未留存有效的识别依据。';
 }
-function renderRiskAssessment(r){return '<div class="detail-section"><h3>风险研判</h3><div class="ai-box warn"><strong>识别依据</strong>'+riskSummary(r)+'<br><strong style="margin-top:8px">处置边界</strong>风险结论需以订单、现场记录和顾客证据为准，完成事实核查前不对外承诺责任或赔付。</div></div>'}
+function renderRiskAssessment(r){return '<div class="detail-section"><h3>风险研判</h3><div class="ai-box warn"><strong>识别依据</strong>'+riskSummary(r)+'</div></div>'}
 function riskReviews(){
   const q=app.riskQuery.trim().toLowerCase();
   return queueReviews().filter(r=>r.risk!=='normal')
@@ -1618,11 +1634,10 @@ function riskReviews(){
     .filter(r=>app.riskPlatform==='all'||r.platformId===app.riskPlatform)
     .filter(r=>app.riskTab==='all'||app.riskTab==='open'&&riskCaseStatus(r)!=='closed'||riskCaseStatus(r)===app.riskTab)
     .filter(r=>app.riskSeverity==='all'||r.risk===app.riskSeverity)
-    .filter(r=>app.riskIssue==='all'||reviewIssueCategories(r).includes(app.riskIssue))
     .filter(r=>!q||[riskEventId(r),...reviewIssueTagNames(r),r.text,storeBy(r.storeId)?.name,platformBy(r.platformId)?.name].some(v=>String(v||'').toLowerCase().includes(q)))
     .sort((a,b)=>new Date(b.riskDetectedAt)-new Date(a.riskDetectedAt)||a.id.localeCompare(b.id));
 }
-function resetRiskFilters(store=app.store){app.store=store;app.riskTab='all';app.riskSeverity='all';app.riskIssue='all';app.riskPlatform='all';app.riskQuery='';app.riskDateFrom='';app.riskDateTo='';app.riskPage=1;app.selectedRisk=null;delete app.filterDrafts.risks}
+function resetRiskFilters(store=app.store){app.store=store;app.riskTab='all';app.riskSeverity='all';app.riskPlatform='all';app.riskQuery='';app.riskDateFrom='';app.riskDateTo='';app.riskPage=1;app.selectedRisk=null;delete app.filterDrafts.risks}
 function riskTimeLabel(r){return autoReplyTimeLabel({replyPublishedAt:r.riskDetectedAt})}
 function riskListItem(r){
   const state=riskCaseStatus(r);
@@ -1639,7 +1654,7 @@ function renderRisks(){
   const selected=reviewBy(app.selectedRisk),selectedCase=selected?riskCaseStatus(selected):null;
   const detail=selected?'<div class="card risk-detail"><div class="detail-titlebar"><div><div class="tag-row"><span class="pill '+(selected.risk==='high'?'red':'amber')+'">'+riskLabel(selected.risk)+'</span></div><h2>风险详情</h2><p class="muted">'+riskEventId(selected)+' · '+storeBy(selected.storeId)?.name+' · '+platformBy(selected.platformId)?.short+' · '+riskTimeLabel(selected)+'</p></div><span class="pill '+riskCaseStatusPill(selectedCase)+'">'+riskCaseStatusLabel(selectedCase)+'</span></div>'+renderRiskIssueTags(selected)+renderRiskAssessment(selected)+'<div class="detail-section"><h3>原始证据</h3><div class="muted" style="margin-bottom:8px">来源：'+platformBy(selected.platformId)?.name+'评价 '+selected.id.toUpperCase()+' · '+starRating(selected.rating,true,'compact')+'</div><div class="detail-text">'+esc(selected.text)+'</div>'+reviewDetailMedia(selected)+(selected.order?'<p class="muted">关联订单：'+selected.order+'</p>':'')+'</div>'+(selected.notes?'<div class="detail-section"><h3>处理记录</h3>'+renderRiskRecords(selected)+'</div>':'')+'<div class="inline-actions"><button class="btn" data-open-risk="'+selected.id+'">'+(selectedCase==='closed'?'查看处理记录':selectedCase==='handling'?'继续处理':'开始处理')+'</button><button class="btn-outline" data-risk-source-review="'+selected.id+'">查看评价详情</button>'+(canRemoveRisk(selected)?'<button class="link-btn danger" data-remove-risk="'+selected.id+'">移出风险</button>':'')+'</div></div>':'<div class="card">'+empty('暂无风险事件','当前筛选范围内暂无对应状态的风险事件。')+'</div>';
 
-  const activeFilters=(app.store!=='all'?1:0)+(app.riskPlatform!=='all'?1:0)+(app.riskTab!=='all'?1:0)+(app.riskSeverity!=='all'?1:0)+(app.riskIssue!=='all'?1:0)+(app.riskQuery?1:0)+(app.riskDateFrom?1:0);
+  const activeFilters=(app.store!=='all'?1:0)+(app.riskPlatform!=='all'?1:0)+(app.riskTab!=='all'?1:0)+(app.riskSeverity!=='all'?1:0)+(app.riskQuery?1:0)+(app.riskDateFrom?1:0);
   const events=pageList.map(riskListItem).join('');
   const visiblePages=Math.min(5,totalPages),firstPage=Math.max(1,Math.min(app.riskPage-2,totalPages-visiblePages+1));
   const pages=Array.from({length:visiblePages},(_,i)=>firstPage+i);
@@ -1651,7 +1666,6 @@ function renderRisks(){
     field('平台','riskPlatform','<select id="riskPlatform"><option value="all">全部平台</option>'+app.platforms.map(p=>'<option value="'+p.id+'" '+(f.platform===p.id?'selected':'')+'>'+esc(p.short)+'</option>').join('')+'</select>')+
     field('处理状态','riskStatus','<select id="riskStatus"><option value="all" '+(f.status==='all'?'selected':'')+'>全部状态</option>'+[['open','未办结'],['pending','待处理'],['handling','处理中'],['closed','已办结']].map(a=>'<option value="'+a[0]+'" '+(f.status===a[0]?'selected':'')+'>'+a[1]+'</option>').join('')+'</select>')+
     field('风险等级','riskSeverity','<select id="riskSeverity"><option value="all">全部等级</option><option value="high" '+(f.severity==='high'?'selected':'')+'>高风险</option><option value="attention" '+(f.severity==='attention'?'selected':'')+'>一般风险</option></select>')+
-    field('问题标签','riskIssue','<select id="riskIssue"><option value="all">全部问题</option>'+ISSUE_TAXONOMY.map(category=>'<option value="'+category.id+'" '+(f.issue===category.id?'selected':'')+'>'+esc(category.name)+'</option>').join('')+'</select>')+
     '<div class="review-filter-field"><label for="riskDateRange">识别时间</label>'+dateRangeTrigger('risk',{from:f.dateFrom,to:f.dateTo})+'</div>'+
     '</div><div class="review-filter-footer"><span>共 <strong>'+list.length+'</strong> 条风险'+(activeFilters?' · 已启用 '+activeFilters+' 个筛选条件':'')+'</span>'+filterActions('Risk',activeFilters||filterHasValues(f))+'</div></div>';
   return titleBlock('风险中心')+
@@ -1755,9 +1769,9 @@ function renderAnalysisV1(){
     '<div class="card" style="margin-bottom:12px"><div class="tabs">'+tabs.map(([key,label])=>'<button data-analysis-section="'+key+'" class="'+(app.analysisSection===key?'active':'')+'">'+label+'</button>').join('')+'</div></div>'+
     '<div class="analysis-top"><div class="card"><div class="card-body"><small>评价总量</small><strong>'+list.length+'<small>条</small></strong></div></div><div class="card"><div class="card-body"><small>差评数量</small><strong>'+bad.length+'<small>条</small></strong></div></div><div class="card"><div class="card-body"><small>差评率</small><strong>'+rateText(bad.length,list.length)+'</strong></div></div></div>';
   if(app.analysisSection==='overview'){
-    const trend=analysisTrendBuckets(),issueRows=ISSUE_TAXONOMY.map(category=>({category,count:list.filter(r=>reviewIssueCategories(r).includes(category.id)).length})).filter(x=>x.count).sort((a,b)=>b.count-a.count),maxIssue=Math.max(1,...issueRows.map(x=>x.count));
+    const trend=analysisTrendBuckets(),issueRows=ISSUE_TAXONOMY.map(category=>({category,count:bad.filter(r=>reviewIssueCategories(r).includes(category.id)).length})).filter(x=>x.count).sort((a,b)=>b.count-a.count),maxIssue=Math.max(1,...issueRows.map(x=>x.count));
     out+='<section class="card" style="margin-bottom:12px">'+cardHead('评价趋势','chart-line')+'<div class="chart-wrap reputation-combo-chart"><canvas id="analysisTrend" role="img" aria-label="近'+app.range+'天评价总量、差评数量与差评率趋势"></canvas></div><div class="chart-legend"><span><i class="legend-bar" style="background:#88a9f7"></i>评价总量</span><span><i class="legend-bar" style="background:#f3a3aa"></i>差评数量</span><span><i class="legend-line" style="background:#e64050"></i>差评率（右轴）</span></div><table class="sr-only"><caption>评价趋势明细</caption><thead><tr><th>日期</th><th>评价量</th><th>差评量</th><th>差评率</th></tr></thead><tbody>'+trend.map(x=>'<tr><td>'+x.label+'</td><td>'+x.total+'</td><td>'+x.bad+'</td><td>'+rateText(x.bad,x.total)+'</td></tr>').join('')+'</tbody></table></section>';
-    out+='<section class="card">'+cardHead('主要问题','list-filter')+'<div class="dimension-list">'+(issueRows.length?issueRows.map(x=>'<button class="dimension-row" data-dimension="'+x.category.id+'"><span>'+x.category.name+'</span><span class="dimension-track"><span class="dimension-fill" style="display:block;width:'+percent(x.count,maxIssue)+'%"></span></span><strong>'+x.count+'条</strong></button>').join(''):empty('暂无问题反馈','所选周期内没有已标注的问题。'))+'</div></section>';
+    out+='<section class="card">'+cardHead('差评主要问题','list-filter')+'<div class="dimension-list">'+(issueRows.length?issueRows.map(x=>'<button class="dimension-row" data-dimension="'+x.category.id+'"><span>'+x.category.name+'</span><span class="dimension-track"><span class="dimension-fill" style="display:block;width:'+percent(x.count,maxIssue)+'%"></span></span><strong>'+x.count+'条</strong></button>').join(''):empty('暂无问题反馈','所选周期内没有已标注的问题。'))+'</div></section>';
   }else if(app.analysisSection==='stores'){
     const ranked=[...stores].sort((a,b)=>b.bad-a.bad||b.total-a.total),maxBad=Math.max(0,...ranked.map(x=>x.bad));
     out+='<section class="card">'+cardHead('门店对比','store','<small class="analysis-sort-note">按差评数排序</small>')+'<div class="analysis-compare-list">'+ranked.map(x=>{
@@ -1886,7 +1900,7 @@ function openIssueDetail(id){
   const timeRange=timeBucketLabel(storeList);
   let body='<div class="detail-kv"><div><small>负面提及</small><strong>'+neg.length+'条</strong></div><div><small>涉及门店</small><strong>'+new Set(list.map(r=>r.storeId)).size+'家</strong></div><div><small>评价集中时段</small><strong>'+timeRange+'</strong></div></div>';
   body+='<div class="detail-section"><h3>近'+app.range+'天问题趋势</h3><div class="chart-wrap"><canvas id="issueChart"></canvas></div></div>';
-  body+='<div class="detail-section"><h3>门店分布</h3><div class="details-list">'+app.stores.map(s=>'<div class="detail-kv" style="grid-template-columns:1fr auto;border-bottom:1px solid var(--line);padding:7px 0"><span>'+s.name+'</span><strong>'+list.filter(r=>r.storeId===s.id).length+'次提及</strong></div>').join('')+'</div><p class="muted">时段按评价发布时间统计，仅用于定位核查范围，不代表已确认根因。</p></div>';
+  body+='<div class="detail-section"><h3>门店分布</h3><div class="details-list">'+app.stores.map(s=>'<div class="detail-kv" style="grid-template-columns:1fr auto;border-bottom:1px solid var(--line);padding:7px 0"><span>'+s.name+'</span><strong>'+list.filter(r=>r.storeId===s.id).length+'次提及</strong></div>').join('')+'</div></div>';
   body+='<div class="detail-section"><h3>顾客原声</h3>'+neg.slice(0,3).map(r=>'<div class="detail-text" style="margin-bottom:8px">“'+esc(r.text)+'”<small class="muted"> · '+platformBy(r.platformId)?.short+'</small></div>').join('')+'</div>';
   body+='<div class="detail-section"><h3>AI发现的可能关联</h3><div class="ai-box"><strong>事实 → 可能关联 → 建议验证</strong>'+storeBy(issue.store)?.name+'有'+peak+'条相关负面评价。评价发布时间主要集中在'+timeRange+'，建议对照同时段排班、订单和现场响应记录核查，不直接认定原因。</div></div>';
   body+='<div class="detail-section"><h3>改善建议</h3><ol style="padding-left:18px;line-height:1.8;color:#394967">'+issue.advice.map(x=>'<li>'+x+'</li>').join('')+'</ol></div>';
@@ -1904,7 +1918,7 @@ function closedReportPeriods(type,now=DEMO_NOW){
   const today=new Date(now);today.setHours(0,0,0,0);
   const ordinal=date=>Date.UTC(date.getFullYear(),date.getMonth(),date.getDate())/86400000;
   const weekStart=new Date(today);weekStart.setDate(weekStart.getDate()-(today.getDay()+6)%7);
-  return Array.from({length:type==='daily'?3:2},(_,i)=>{
+  return Array.from({length:type==='daily'?14:type==='weekly'?8:6},(_,i)=>{
     let start,endExclusive;
     if(type==='daily'){start=new Date(today);start.setDate(start.getDate()-i-1);endExclusive=new Date(start);endExclusive.setDate(endExclusive.getDate()+1)}
     else if(type==='weekly'){endExclusive=new Date(weekStart);endExclusive.setDate(endExclusive.getDate()-i*7);start=new Date(endExclusive);start.setDate(start.getDate()-7)}
@@ -1919,7 +1933,7 @@ function preserveReportSnapshots(){const tab=app.reportTab;try{for(const type of
 function reportRows(){
   const type=app.reportTab,periods=closedReportPeriods(type);
   return periods.map((period,i)=>{
-    const id=type+'-'+i;
+    const id=type+'-'+period.startDate.replaceAll('-','');
     if(!app.reportSnapshots[id]){
       const list=app.reviews.filter(r=>r.daysAgo>=period.from&&r.daysAgo<period.to).map(r=>({...structuredClone(r),replyStatus:replyStatus(r),caseStatus:r.risk==='normal'?null:riskCaseStatus(r),issueCategories:[...reviewIssueCategories(r)]}));
       const low=list.filter(r=>r.rating<=3),replied=low.filter(isReplied).length,highAll=list.filter(r=>r.risk==='high').length,highDone=list.filter(r=>r.risk==='high'&&riskCaseStatus(r)==='closed').length;
@@ -1933,6 +1947,8 @@ function reportRows(){
   });
 }
 function reportById(id){
+  const alias=/^(daily|weekly|monthly)-([0-9])$/.exec(String(id||''));
+  if(alias){const previous=app.reportTab;app.reportTab=alias[1];id=reportRows()[Number(alias[2])]?.id;app.reportTab=previous}
   const tab=/^(daily|weekly|monthly)-\d+$/.exec(String(id||''))?.[1];
   if(!tab)return null;
   const currentTab=app.reportTab;
@@ -1950,10 +1966,10 @@ function reportSummary(snapshot){
 }
 function renderReports(){
   const tabs=[['daily','日报'],['weekly','周报'],['monthly','月报']];
-  const rows=reportRows();
+  const rows=opsFilteredReports(reportRows());
   if(!rows.some(r=>r.id===app.selectedReport))app.selectedReport=rows[0]?.id||null;
   const selected=rows.find(r=>r.id===app.selectedReport)||rows[0];
-  if(!selected)return titleBlock('口碑报告')+'<section class="card">'+empty('暂无报告','当前周期暂无报告。')+'</section>';
+  if(!selected)return titleBlock('口碑报告')+opsReportFiltersHTML()+'<section class="card">'+'<div class="tabs">'+tabs.map(a=>'<button data-report-tab="'+a[0]+'" class="'+(app.reportTab===a[0]?'active':'')+'">'+a[1]+'</button>').join('')+'</div>'+empty('暂无匹配报告','请调整时间范围或重置筛选。')+'</section>';
   const list=selected.list,replyBase=list.filter(r=>r.rating<=3),replied=selected.replied;
   const stars=[5,4,3,2,1].map(star=>({star,count:list.filter(r=>r.rating===star).length})),starMax=Math.max(1,...stars.map(x=>x.count));
   const issueCounts=selected.issueDefinitions.map(({id,name})=>({name,count:list.filter(r=>r.issueCategories.includes(id)).length})).filter(x=>x.count).sort((a,b)=>b.count-a.count),issueMax=Math.max(1,...issueCounts.map(x=>x.count));
@@ -1963,8 +1979,8 @@ function renderReports(){
   const storePlatformTable='<div class="report-table-wrap"><table class="simple-table report-store-platform-table"><thead><tr><th>门店</th>'+selected.platforms.map(p=>'<th>'+p.name+'</th>').join('')+'<th>评价总量</th><th>差评</th><th>已回复差评</th></tr></thead><tbody>'+storePlatformRows.map(row=>'<tr><td><strong>'+row.store.name+'</strong></td>'+row.platforms.map(x=>'<td><div class="report-platform-cell"><strong>'+(Number.isFinite(x.currentRating)?starRating(x.currentRating,true,'compact'):'')+'</strong><small>'+(Number.isFinite(x.currentRating)?'生成时评分 · ':'')+'评价'+x.total+'条 · 差评'+x.bad+'</small></div></td>').join('')+'<td>'+row.total+'</td><td>'+row.bad+'</td><td>'+row.replied+'</td></tr>').join('')+'</tbody></table></div>';
   const highAll=selected.highAll,highDone=selected.highDone,highOpen=highAll-highDone;
   const summary=reportSummary(selected),replyRateText=rateText(replied,replyBase.length),hasRating=platformRows.some(x=>x.ratingText!=='—');
-  const preview='<section class="card report-preview"><div class="detail-titlebar"><div><h2>'+esc(selected.name)+'</h2><p class="muted">'+esc(selected.range)+'</p></div><div class="page-actions"><button class="btn-outline" data-export-report="'+selected.id+'">'+icon('download')+'导出 HTML</button><button class="btn-outline" data-ai-interpret-report="'+selected.id+'">'+icon('sparkles')+'AI 解读报告</button><button class="btn-outline" data-share-report="'+selected.id+'">'+icon('share-2')+'分享</button></div></div>'+
-    '<div class="report-kpis"><div><small>评价总量</small><strong>'+selected.total+'</strong><em>本报告周期</em></div><div><small>差评数量</small><strong>'+selected.bad+'</strong><em>1—3星评价</em></div><div><small>差评率</small><strong>'+rateText(selected.bad,list.length)+'</strong><em>'+selected.bad+'/'+selected.total+'条</em></div><div><small>已回复差评</small><strong>'+replied+'</strong><em>生成时快照</em></div><div><small>差评回复率</small><strong>'+replyRateText+'</strong><em>'+replied+'/'+replyBase.length+'条已回复</em></div><div><small>高风险已办结</small><strong>'+highDone+'</strong><em>共识别'+highAll+'条</em></div></div>'+
+  const preview='<section class="card report-preview"><div class="detail-titlebar"><div><h2>'+esc(selected.name)+'</h2><p class="muted">'+esc(selected.range)+'</p></div><div class="page-actions"><button class="btn-outline" data-export-report="'+selected.id+'">'+icon('download')+'下载 PDF</button><button class="btn-outline" data-ai-interpret-report="'+selected.id+'">'+icon('sparkles')+'AI 解读报告</button><button class="btn-outline" data-share-report="'+selected.id+'">'+icon('share-2')+'分享</button></div></div>'+
+    '<div class="report-kpis"><div><small>评价总量</small><strong>'+selected.total+'</strong></div><div><small>差评数量</small><strong>'+selected.bad+'</strong></div><div><small>差评率</small><strong>'+rateText(selected.bad,list.length)+'</strong></div><div><small>已回复差评</small><strong>'+replied+'</strong></div><div><small>差评回复率</small><strong>'+replyRateText+'</strong></div><div><small>高风险已办结</small><strong>'+highDone+'</strong></div></div>'+
     '<div class="report-section"><div class="report-section-title"><h3>一、本期结论</h3></div><div class="report-conclusion"><div><strong>评价概况</strong>'+esc(summary.overview)+'</div><div class="warn"><strong>重点关注</strong>'+esc(summary.focus)+'</div></div></div>'+
     '<div class="report-section"><div class="report-section-title"><h3>二、评价趋势与星级结构</h3></div><div class="report-preview-grid"><div class="report-mini-chart"><h3>'+(app.reportTab==='daily'?'本日评价量趋势':'本期评价量趋势')+'</h3><div class="chart-wrap"><canvas id="reportTrend" role="img" aria-label="'+selected.range+'评价量与差评量趋势"></canvas></div><div class="chart-legend"><span><i class="legend-line" style="background:#2864e8"></i>评价量</span><span><i class="legend-line" style="background:#f43d51"></i>差评量</span></div><table class="sr-only"><caption>报告趋势明细</caption><thead><tr><th>'+(app.reportTab==='daily'?'时间':'日期')+'</th><th>评价量</th><th>差评量</th></tr></thead><tbody>'+reportTrendRows(selected).map(row=>'<tr><td>'+esc(row.date||row.label)+'</td><td>'+row.total+'</td><td>'+row.bad+'</td></tr>').join('')+'</tbody></table></div><div class="report-breakdown"><h3>星级分布</h3><div class="report-rating-list">'+stars.map(x=>'<div class="report-rating-row"><span>'+starRating(x.star,false,'compact')+'</span><span class="dimension-track"><span class="dimension-fill" style="display:block;width:'+percent(x.count,starMax)+'%"></span></span><strong>'+x.count+' · '+percent(x.count,list.length)+'%</strong></div>').join('')+'</div></div></div></div>'+
     '<div class="report-section"><div class="report-section-title"><h3>三、品牌平台汇总</h3></div><div class="report-table-wrap"><table class="simple-table"><thead><tr><th>平台</th><th>评价量</th>'+(hasRating?'<th>生成时门店评分范围</th>':'')+'<th>差评</th><th>差评回复率</th></tr></thead><tbody>'+platformRows.map(x=>'<tr><td>'+x.name+'</td><td>'+x.total+'</td>'+(hasRating?'<td><strong>'+x.ratingText+'</strong></td>':'')+'<td>'+x.bad+'</td><td>'+(x.bad?x.replyRate+'%':'—')+'</td></tr>').join('')+'</tbody></table></div></div>'+
@@ -1973,7 +1989,7 @@ function renderReports(){
     '<div class="report-section"><div class="report-section-title"><h3>五、问题与风险</h3></div><div class="report-preview-grid"><div class="report-breakdown"><h3>高频问题分布</h3>'+(issueCounts.length?issueCounts.map(x=>'<div class="dimension-row"><span>'+x.name+'</span><span class="dimension-track"><span class="dimension-fill" style="display:block;width:'+percent(x.count,issueMax)+'%"></span></span><strong>'+x.count+'</strong></div>').join(''):'<p class="muted">暂无已标注问题</p>')+'</div><div class="report-breakdown"><h3>高风险处理进度</h3><div class="detail-kv"><div><small>本期识别</small><strong>'+highAll+'条</strong></div><div><small>生成时已办结</small><strong>'+highDone+'条</strong></div><div><small>生成时未办结</small><strong>'+highOpen+'条</strong></div></div></div></div></div>'+
 
     '</section>';
-  return titleBlock('口碑报告')+
+  return titleBlock('口碑报告')+opsReportFiltersHTML()+
     '<div class="report-workspace"><div class="card"><div class="tabs">'+tabs.map(a=>'<button data-report-tab="'+a[0]+'" class="'+(app.reportTab===a[0]?'active':'')+'">'+a[1]+'</button>').join('')+'</div><div class="list-scroll">'+rows.map(r=>'<button class="report-list-item '+(app.selectedReport===r.id?'active':'')+'" data-select-report="'+r.id+'"><h3>'+r.name+'</h3><p>'+r.range+'</p><p>'+r.total+'条评价 · '+r.bad+'条差评 · 已回复差评'+r.replied+'条</p></button>').join('')+'</div></div>'+preview+'</div>';
 }
 function reportTrendRows(selected){
@@ -2031,10 +2047,10 @@ function choosePlatformConnection(){
 function renderBrandConnectionStep(){
   const p=platformBy(app.connectionDraft.platformId),step=app.connectionStep,labels=['确认账号','同步门店','批量匹配','能力校验'];
   let content='';
-  if(step===0)content='<div class="detail-kv"><div><small>商家账号</small><strong>'+p.account+'</strong></div><div><small>业务线</small><strong>'+p.business+'</strong></div><div><small>授权方式</small><strong>'+p.method+'</strong></div></div><p class="muted">重新授权前将先核对原服务商关系和受影响门店，不会默认覆盖已有唯一绑定。</p>';
+  if(step===0)content='<div class="detail-kv"><div><small>商家账号</small><strong>'+p.account+'</strong></div><div><small>业务线</small><strong>'+p.business+'</strong></div><div><small>授权方式</small><strong>'+p.method+'</strong></div></div>';
   if(step===1)content='<div class="checklist">'+app.stores.map(s=>'<label><input type="checkbox" checked> '+s.name+'<small class="muted"> · '+s.address+'</small></label>').join('')+'</div><p class="muted">本次账号共发现 '+app.stores.length+' 家可管理门店，可一次同步所选门店。</p>';
   if(step===2)content='<div class="details-list">'+app.stores.map((s,i)=>'<div class="detail-kv" style="grid-template-columns:1fr auto"><div><small>'+s.name+'</small><strong>'+s.address+'</strong></div><span class="pill '+(i===3?'amber':'green')+'">'+(i===3?'待核对':'已匹配')+'</span></div>').join('')+'</div>';
-  if(step===3)content='<div class="capability-list">'+capabilityRows(p)+'</div><div class="integration-note" style="margin-top:12px"><strong>校验结果</strong>能力状态按业务线与真实授权分别记录，不会用一个“已连接”替代全部权限。</div>';
+  if(step===3)content='<div class="capability-list">'+capabilityRows(p)+'</div>';
   openModal('平台账号接入 · '+p.name,'<div class="modal-steps">'+labels.map((x,i)=>'<span class="'+(i===step?'active':'')+'">'+(i+1)+' '+x+'</span>').join('')+'</div><div class="detail-section"><h3>'+labels[step]+'</h3>'+content+'</div>','<button class="btn-outline" data-close-modal>取消</button><button class="btn" id="nextBrandConnection">'+(step===3?'完成校验':'下一步')+'</button>');
   $('#nextBrandConnection').onclick=()=>{if(app.connectionStep>=3){closeModal();app.integrationTab='matching';render();toast(p.name+'账号与门店状态已更新')}else{app.connectionStep++;renderBrandConnectionStep()}};
 }
@@ -2179,7 +2195,7 @@ function openTaxonomyForm(id){
 function requestDeleteTaxonomy(id){
   const item=ISSUE_TAXONOMY.find(x=>x.id===id);if(!item)return;const count=taxonomyUsage(id);
   openModal('删除问题标签','<div class="ai-box warn"><strong>确认删除“'+esc(item.name)+'”</strong>'+(count?'当前有'+count+'条评价关联该标签。删除后将解除这些关联，但不会删除评价或影响原文。':'当前没有评价关联该标签。')+'</div>','<button class="btn-outline" data-close-modal>取消</button><button class="btn-danger" id="confirmDeleteTaxonomy">确认删除</button>');
-  $('#confirmDeleteTaxonomy').onclick=()=>{preserveReportSnapshots();app.reviews.forEach(r=>{if(Array.isArray(r.issueCategories))r.issueCategories=r.issueCategories.filter(x=>x!==id)});const index=ISSUE_TAXONOMY.findIndex(x=>x.id===id);if(index>=0)ISSUE_TAXONOMY.splice(index,1);if(app.reviewFilters.issue===id)app.reviewFilters.issue='all';if(app.riskIssue===id)app.riskIssue='all';for(const scope of ['reviews','risks'])if(app.filterDrafts[scope]?.issue===id)app.filterDrafts[scope].issue='all';closeModal();render();toast('问题标签已删除')};
+  $('#confirmDeleteTaxonomy').onclick=()=>{preserveReportSnapshots();app.reviews.forEach(r=>{if(Array.isArray(r.issueCategories))r.issueCategories=r.issueCategories.filter(x=>x!==id)});const index=ISSUE_TAXONOMY.findIndex(x=>x.id===id);if(index>=0)ISSUE_TAXONOMY.splice(index,1);if(app.reviewFilters.issue===id)app.reviewFilters.issue='all';if(app.filterDrafts.reviews?.issue===id)app.filterDrafts.reviews.issue='all';closeModal();render();toast('问题标签已删除')};
 }
 function openReviewCategoryEditor(id){
   const r=reviewBy(id);if(!r)return;const selected=new Set(reviewIssueCategories(r));
@@ -2387,28 +2403,28 @@ function aiAnswer(message){
   }
   if(scenario==='overview'){
     const today=scoped.filter(r=>r.daysAgo===0),badPending=scoped.filter(r=>r.rating<=3&&isReplyPending(r)),high=scoped.filter(r=>r.risk==='high'&&riskCaseStatus(r)!=='closed');
-    body='<h3>先处理风险，再处理待回复差评</h3><p>当前有'+high.length+'条高风险事件未办结、'+badPending.length+'条差评待回复；今天新收到'+today.length+'条评价，其中'+today.filter(r=>r.rating<=3).length+'条差评。高风险需要先核查事实，不应直接公开承诺。</p><div class="ai-metrics">'+aiMetric('今日评价',today.length+'条')+aiMetric('差评待回复',badPending.length+'条')+aiMetric('高风险未办结',high.length+'条')+'</div>'+aiEvidence([...high,...badPending.filter(r=>!high.includes(r))].slice(0,3))+aiActions([{label:'进入风险中心',attr:'data-ai-go="risks"',icon:'shield-alert',primary:true},{label:'查看待回复评价',attr:'data-ai-go="reviews"',icon:'message-square-reply'}])+'<div class="ai-method">口径：今日评价按评价日期；待回复与风险状态按当前样例记录，二者是独立状态。</div>';
+    body='<h3>先处理风险，再处理待回复差评</h3><p>当前有'+high.length+'条高风险事件未办结、'+badPending.length+'条差评待回复；今天新收到'+today.length+'条评价，其中'+today.filter(r=>r.rating<=3).length+'条差评。高风险需要先核查事实，不应直接公开承诺。</p><div class="ai-metrics">'+aiMetric('今日评价',today.length+'条')+aiMetric('差评待回复',badPending.length+'条')+aiMetric('高风险未办结',high.length+'条')+'</div>'+aiEvidence([...high,...badPending.filter(r=>!high.includes(r))].slice(0,3))+aiActions([{label:'进入风险中心',attr:'data-ai-go="risks"',icon:'shield-alert',primary:true},{label:'查看待回复评价',attr:'data-ai-go="reviews"',icon:'message-square-reply'}]);
   }else if(scenario==='bad_trend'){
     const trendDays=context.periodExplicit?days:7,recent=scoped.filter(r=>r.daysAgo>=0&&r.daysAgo<trendDays),previous=scoped.filter(r=>r.daysAgo>=trendDays&&r.daysAgo<trendDays*2);
     const recentBad=recent.filter(r=>r.rating<=3),previousBad=previous.filter(r=>r.rating<=3);
     const change=recentBad.length-previousBad.length,changeText=!previous.length?'无法比较（前期没有已同步评价）':change>0?'增加'+change+'条':change<0?'减少'+Math.abs(change)+'条':'持平';
-    body='<h3>近7天差评变化</h3><p>近7天收到'+recentBad.length+'条差评，前7天为'+previousBad.length+'条，数量'+changeText+'。两期评价总量分别为'+recent.length+'条和'+previous.length+'条；差评率分别为'+rateText(recentBad.length,recent.length)+'和'+rateText(previousBad.length,previous.length)+'，需要结合评价规模判断变化。</p><div class="ai-metrics">'+aiMetric('近7天差评',recentBad.length+'条')+aiMetric('前7天差评',previousBad.length+'条')+aiMetric('近7天差评率',rateText(recentBad.length,recent.length))+'</div>'+aiEvidence(recentBad.slice(0,3))+aiActions([{label:'查看口碑分析',attr:'data-ai-analysis="overview"',icon:'chart-no-axes-combined',primary:true}])+'<div class="ai-method">口径：按评价发布时间划分连续两个7天周期，差评为1—3星；仅统计已同步评价，连接异常可能影响数据完整性。</div>';
+    body='<h3>近7天差评变化</h3><p>近7天收到'+recentBad.length+'条差评，前7天为'+previousBad.length+'条，数量'+changeText+'。两期评价总量分别为'+recent.length+'条和'+previous.length+'条；差评率分别为'+rateText(recentBad.length,recent.length)+'和'+rateText(previousBad.length,previous.length)+'，需要结合评价规模判断变化。</p><div class="ai-metrics">'+aiMetric('近7天差评',recentBad.length+'条')+aiMetric('前7天差评',previousBad.length+'条')+aiMetric('近7天差评率',rateText(recentBad.length,recent.length))+'</div>'+aiEvidence(recentBad.slice(0,3))+aiActions([{label:'查看口碑分析',attr:'data-ai-analysis="overview"',icon:'chart-no-axes-combined',primary:true}]);
   }else if(scenario==='compare'){
     const rows=app.stores.filter(s=>!context.storeId||context.storeId==='all'||s.id===context.storeId).map(s=>{const all=period.filter(r=>r.storeId===s.id),bad=all.filter(r=>r.rating<=3);return {store:s,all,bad}}).sort((a,b)=>b.bad.length-a.bad.length||b.all.length-a.all.length),first=rows[0],leaders=rows.filter(x=>x.bad.length===first.bad.length);
-    body='<h3>近30天门店差评对比</h3><p>'+(first.bad.length?(context.storeId&&context.storeId!=='all'?esc(first.store.name)+'共有':leaders.map(x=>esc(x.store.name)).join('、')+(leaders.length>1?'并列差评最多，各有':'差评最多，有'))+first.bad.length+'条差评。':'当前范围没有差评，无法排出差评最多的门店。')+'数量与比率含义不同，应结合评价规模看。</p><div class="ai-metrics">'+rows.slice(0,3).map(x=>aiMetric(x.store.name,x.bad.length+' / '+x.all.length+'条')).join('')+'</div>'+aiEvidence(first.bad.slice(0,3))+aiActions([{label:'查看门店对比',attr:'data-ai-analysis="stores"',icon:'chart-no-axes-combined',primary:true}])+'<div class="ai-method">口径：近30天已同步评价；差评为1—3星。上方数字依次为差评数 / 评价总数。</div>';
+    body='<h3>近30天门店差评对比</h3><p>'+(first.bad.length?(context.storeId&&context.storeId!=='all'?esc(first.store.name)+'共有':leaders.map(x=>esc(x.store.name)).join('、')+(leaders.length>1?'并列差评最多，各有':'差评最多，有'))+first.bad.length+'条差评。':'当前范围没有差评，无法排出差评最多的门店。')+'数量与比率含义不同，应结合评价规模看。</p><div class="ai-metrics">'+rows.slice(0,3).map(x=>aiMetric(x.store.name+' · 差评/评价',x.bad.length+' / '+x.all.length+'条')).join('')+'</div>'+aiEvidence(first.bad.slice(0,3))+aiActions([{label:'查看门店对比',attr:'data-ai-analysis="stores"',icon:'chart-no-axes-combined',primary:true}]);
   }else if(scenario==='issues'){
     const ranked=ISSUE_TAXONOMY.map(category=>({category,rows:negative.filter(r=>reviewIssueCategories(r).includes(category.id))})).filter(x=>x.rows.length).sort((a,b)=>b.rows.length-a.rows.length);
     const top=ranked[0];
-    body=top?'<h3>近30天差评问题分布</h3><p>差评中提及最多的是“'+esc(top.category.name)+'”，涉及'+top.rows.length+'条评价。以下为出现次数最多的三个问题标签，需结合原文判断具体原因。</p><div class="ai-metrics">'+ranked.slice(0,3).map(x=>aiMetric(x.category.name,x.rows.length+'条')).join('')+'</div>'+aiEvidence(top.rows.slice(0,3))+aiActions([{label:'查看问题分析',attr:'data-ai-analysis="issues"',icon:'chart-no-axes-combined',primary:true}])+'<div class="ai-method">口径：近30天1—3星评价；按评价内容命中问题标签，同一评价可计入多个问题标签。</div>':'<h3>暂无可分析的差评问题</h3><p>当前时间范围没有已标注的差评。</p>';
+    body=top?'<h3>近30天差评问题分布</h3><p>差评中提及最多的是“'+esc(top.category.name)+'”，涉及'+top.rows.length+'条评价。以下为出现次数最多的三个问题标签，需结合原文判断具体原因。</p><div class="ai-metrics">'+ranked.slice(0,3).map(x=>aiMetric(x.category.name,x.rows.length+'条')).join('')+'</div>'+aiEvidence(top.rows.slice(0,3))+aiActions([{label:'查看问题分析',attr:'data-ai-analysis="issues"',icon:'chart-no-axes-combined',primary:true}]):'<h3>暂无可分析的差评问题</h3><p>当前时间范围没有已标注的差评。</p>';
   }else if(scenario==='issue'){
     const rows=period.filter(r=>r.storeId==='gaoxin'&&r.rating<=3&&reviewIssueCategories(r).includes('speed')),pending=rows.filter(isReplyPending);
-    body='<h3>高新店出餐效率：需要核查的线索</h3><p>近30天有'+rows.length+'条差评提及出餐或上菜问题，其中'+pending.length+'条目前待回复。评价文字能说明顾客感受，但不能直接证明是排班、后厨还是传菜环节造成。</p><div class="ai-metrics">'+aiMetric('相关差评',rows.length+'条')+aiMetric('当前待回复',pending.length+'条')+aiMetric('涉及门店','高新店')+'</div><p>建议核对晚高峰订单与首菜时长，记录超时桌次，再对照当班排班和传菜记录。</p>'+aiEvidence(rows.slice(0,3))+aiActions([{label:'创建门店改进任务',attr:'data-ai-create-task="issue:speed"',icon:'list-todo',primary:true},{label:'查看问题分析',attr:'data-ai-analysis="issues"',icon:'chart-no-axes-combined'}])+'<div class="ai-method">筛选：高新店、近30天、1—3星、命中“出餐效率”标签；一个评价可命中多个问题标签。</div>';
+    body='<h3>高新店出餐效率：需要核查的线索</h3><p>近30天有'+rows.length+'条差评提及出餐或上菜问题，其中'+pending.length+'条目前待回复。评价文字能说明顾客感受，但不能直接证明是排班、后厨还是传菜环节造成。</p><div class="ai-metrics">'+aiMetric('相关差评',rows.length+'条')+aiMetric('当前待回复',pending.length+'条')+aiMetric('涉及门店','高新店')+'</div><p>建议核对晚高峰订单与首菜时长，记录超时桌次，再对照当班排班和传菜记录。</p>'+aiEvidence(rows.slice(0,3))+aiActions([{label:'创建门店改进任务',attr:'data-ai-create-task="issue:speed"',icon:'list-todo',primary:true},{label:'查看问题分析',attr:'data-ai-analysis="issues"',icon:'chart-no-axes-combined'}]);
   }else if(scenario==='risk'){
     const rows=scoped.filter(r=>r.risk==='high'&&riskCaseStatus(r)!=='closed');
-    body=rows.length?'<h3>高风险事件需要先核查事实</h3><p>当前有'+rows.length+'条高风险评价尚未办结。先核对订单、现场记录和顾客证据，再确认回复与处置；不能仅凭评价文字认定责任。</p><div class="ai-metrics">'+aiMetric('未办结高风险',rows.length+'条')+aiMetric('待核查门店',new Set(rows.map(r=>r.storeId)).size+'家')+aiMetric('自动公开回复','不可用')+'</div>'+aiEvidence(rows.slice(0,4))+aiActions([{label:'打开风险中心',attr:'data-ai-go="risks"',icon:'shield-alert',primary:true}])+'<div class="ai-method">来源：当前未办结高风险事件；风险等级是处置优先级线索，最终事实和责任需人工核查。</div>':'<h3>当前没有待处理高风险评价</h3><p>仍可在风险中心查看历史事件和处理记录。</p>'+aiActions([{label:'打开风险中心',attr:'data-ai-go="risks"',icon:'shield-alert',primary:true}]);
+    body=rows.length?'<h3>高风险事件需要先核查事实</h3><p>当前有'+rows.length+'条高风险评价尚未办结。先核对订单、现场记录和顾客证据，再确认回复与处置；不能仅凭评价文字认定责任。</p><div class="ai-metrics">'+aiMetric('未办结高风险',rows.length+'条')+aiMetric('待核查门店',new Set(rows.map(r=>r.storeId)).size+'家')+aiMetric('自动公开回复','不可用')+'</div>'+aiEvidence(rows.slice(0,4))+aiActions([{label:'打开风险中心',attr:'data-ai-go="risks"',icon:'shield-alert',primary:true}]):'<h3>当前没有待处理高风险评价</h3><p>仍可在风险中心查看历史事件和处理记录。</p>'+aiActions([{label:'打开风险中心',attr:'data-ai-go="risks"',icon:'shield-alert',primary:true}]);
   }else if(scenario==='platform'){
     const rows=app.platforms.filter(p=>!context.platformId||context.platformId==='all'||p.id===context.platformId).map(p=>{const all=period.filter(r=>r.platformId===p.id),bad=all.filter(r=>r.rating<=3);return {platform:p,all,bad}}).sort((a,b)=>b.bad.length-a.bad.length||b.all.length-a.all.length),first=rows[0],leaders=rows.filter(x=>x.bad.length===first.bad.length);
-    body='<h3>近30天平台表现</h3><p>'+(!first.all.length?'当前范围暂无已同步评价。':!first.bad.length?'当前范围没有差评。':(context.platformId&&context.platformId!=='all'?esc(first.platform.short)+'共有':leaders.map(x=>esc(x.platform.short)).join('、')+(leaders.length>1?'并列差评最多，各有':'差评最多，有'))+first.bad.length+'条差评。')+'各平台数据覆盖和评价量不同，差评数不能单独用于判断平台服务质量。</p><div class="ai-metrics">'+rows.slice(0,6).map(x=>aiMetric(x.platform.short,x.bad.length+' / '+x.all.length+'条')).join('')+'</div>'+aiEvidence(first.bad.slice(0,3))+aiActions([{label:'查看平台分析',attr:'data-ai-analysis="platforms"',icon:'chart-no-axes-combined',primary:true},{label:'检查数据连接',attr:'data-ai-go="integrations"',icon:'blocks'}])+'<div class="ai-method">口径：近30天全部门店评价；上方为差评数 / 评价总数。连接异常的平台门店可能存在数据延迟。</div>';
+    body='<h3>近30天平台表现</h3><p>'+(!first.all.length?'当前范围暂无已同步评价。':!first.bad.length?'当前范围没有差评。':(context.platformId&&context.platformId!=='all'?esc(first.platform.short)+'共有':leaders.map(x=>esc(x.platform.short)).join('、')+(leaders.length>1?'并列差评最多，各有':'差评最多，有'))+first.bad.length+'条差评。')+'各平台数据覆盖和评价量不同，差评数不能单独用于判断平台服务质量。</p><div class="ai-metrics">'+rows.slice(0,6).map(x=>aiMetric(x.platform.short+' · 差评/评价',x.bad.length+' / '+x.all.length+'条')).join('')+'</div>'+aiEvidence(first.bad.slice(0,3))+aiActions([{label:'查看平台分析',attr:'data-ai-analysis="platforms"',icon:'chart-no-axes-combined',primary:true},{label:'检查数据连接',attr:'data-ai-go="integrations"',icon:'blocks'}]);
   }else if(scenario==='reply_select'||scenario==='reply_select_speed'){
     const rows=aiReplyCandidates(scenario==='reply_select_speed',context);
     const visible=rows.slice(0,5);
@@ -2418,7 +2434,7 @@ function aiAnswer(message){
     if(!r)body='<h3>未找到所选评价</h3><p>请重新选择评价后再起草。</p>';else if(isReplied(r))body='<h3>该评价已回复</h3>'+aiEvidence([r])+'<div class="detail-text">'+esc(r.reply||'回复正文未同步')+'</div>';
     else{
       const draftId='aiReplyDraft-'+r.id+'-'+message.messageIndex;
-      body='<h3>回复草稿</h3><p class="ai-answer-subtitle">'+esc(storeBy(r.storeId)?.name)+' · '+esc(platformBy(r.platformId)?.short)+' · '+r.rating+'星 · '+esc(r.id.toUpperCase())+'</p>'+aiEvidence([r])+'<label for="'+draftId+'" class="ai-draft-label">草稿内容</label><textarea class="ai-draft" data-ai-edit-draft="'+message.messageIndex+'" id="'+draftId+'">'+esc(reviewDraftText(r))+'</textarea>'+(message.saved?'<div class="ai-save-confirm">'+icon('check-circle-2')+'已保存至该评价草稿，尚未发布</div>':'')+aiActions([{label:message.saved?'更新草稿':'保存草稿',attr:'data-ai-save-draft="'+r.id+'" data-ai-draft-index="'+message.messageIndex+'"',icon:'save',primary:true},{label:'查看评价详情',attr:'data-ai-open-review="'+r.id+'"',icon:'arrow-up-right'}])+'<div class="ai-method">公开回复需在评价详情中按权限确认。</div>';
+      body='<h3>回复草稿</h3><p class="ai-answer-subtitle">'+esc(storeBy(r.storeId)?.name)+' · '+esc(platformBy(r.platformId)?.short)+' · '+r.rating+'星 · '+esc(r.id.toUpperCase())+'</p>'+aiEvidence([r])+'<label for="'+draftId+'" class="ai-draft-label">草稿内容</label><textarea class="ai-draft" data-ai-edit-draft="'+message.messageIndex+'" id="'+draftId+'">'+esc(reviewDraftText(r))+'</textarea>'+(message.saved?'<div class="ai-save-confirm">'+icon('check-circle-2')+'已保存至该评价草稿，尚未发布</div>':'')+aiActions([{label:message.saved?'更新草稿':'保存草稿',attr:'data-ai-save-draft="'+r.id+'" data-ai-draft-index="'+message.messageIndex+'"',icon:'save',primary:true},{label:'查看评价详情',attr:'data-ai-open-review="'+r.id+'"',icon:'arrow-up-right'}]);
     }
   }else if(scenario==='task_created'){
     const task=app.aiTasks.find(t=>t.id===message.taskId);
@@ -2432,7 +2448,7 @@ function aiAnswer(message){
     }
   }else if(scenario==='connection'){
     const issues=integrationExceptions().filter(x=>(!context.storeId||context.storeId==='all'||x.store.id===context.storeId)&&(!context.platformId||context.platformId==='all'||x.platform.id===context.platformId)).map(x=>({store:x.store,platform:x.platform,status:x.connection.status}));
-    body=issues.length?'<h3>有'+issues.length+'处连接待处理</h3><p>'+issues.map(x=>esc(x.store.name)+'的'+esc(x.platform.short)+({expired:'授权已过期','sync-error':'同步异常','sync-pending':'待首次同步',unconnected:'待匹配'})[x.status]).join('；')+'。相关门店平台的数据可能延迟或不完整，不能把缺失评价当作零评价。</p><div class="ai-metrics">'+aiMetric('同步异常',issues.filter(x=>x.status==='sync-error').length+'处')+aiMetric('授权过期',issues.filter(x=>x.status==='expired').length+'处')+aiMetric('涉及门店',new Set(issues.map(x=>x.store.id)).size+'家')+'</div>'+aiActions([{label:'查看平台接入',attr:'data-ai-go="integrations"',icon:'blocks',primary:true}])+'<div class="ai-method">来源：当前样例门店与平台连接状态；是否有历史数据缺口仍需查看真实同步日志。</div>':'<h3>当前未发现连接异常</h3><p>授权和同步状态没有待处理项。可在平台接入查看各门店连接详情。</p>'+aiActions([{label:'查看平台接入',attr:'data-ai-go="integrations"',icon:'blocks',primary:true}]);
+    body=issues.length?'<h3>有'+issues.length+'处连接待处理</h3><p>'+issues.map(x=>esc(x.store.name)+'的'+esc(x.platform.short)+({expired:'授权已过期','sync-error':'同步异常','sync-pending':'待首次同步',unconnected:'待匹配'})[x.status]).join('；')+'。相关门店平台的数据可能延迟或不完整，不能把缺失评价当作零评价。</p><div class="ai-metrics">'+aiMetric('同步异常',issues.filter(x=>x.status==='sync-error').length+'处')+aiMetric('授权过期',issues.filter(x=>x.status==='expired').length+'处')+aiMetric('涉及门店',new Set(issues.map(x=>x.store.id)).size+'家')+'</div>'+aiActions([{label:'查看平台接入',attr:'data-ai-go="integrations"',icon:'blocks',primary:true}]):'<h3>当前未发现连接异常</h3><p>授权和同步状态没有待处理项。可在平台接入查看各门店连接详情。</p>'+aiActions([{label:'查看平台接入',attr:'data-ai-go="integrations"',icon:'blocks',primary:true}]);
   }else{
     body='<h3>暂时无法回答这个问题</h3><p>目前没有足够的数据依据。可以换一种问法，或从以下问题开始。</p>'+aiActions(AI_QUESTIONS.map(x=>({label:x[0],attr:'data-ai-prompt="'+x[2]+'"',icon:'sparkles'})));
   }
@@ -2444,21 +2460,44 @@ function renderAIAnswer(message,index,messages){
   if(message.answerHtml===undefined)message.answerHtml=aiAnswer({...message,messageIndex:index});
   return message.answerHtml;
 }
+function aiCaptureDraft(){
+ let thread=app.aiThreads.find(t=>t.id===app.aiThreadId);
+ if(!thread&&app.aiInput.trim()){thread={id:'ai-'+Date.now(),title:app.aiInput.trim().slice(0,24),messages:[],updatedAt:new Date().toISOString(),time:'刚刚'};app.aiThreads.unshift(thread);app.aiThreadId=thread.id}
+ if(thread&&thread.draft!==app.aiInput){thread.draft=app.aiInput;thread.updatedAt=new Date().toISOString()}
+}
+function aiHistoryHTML(){
+ const query=(app.aiHistoryQuery||'').trim().toLowerCase(),groups=new Map();
+ const rows=app.aiThreads.filter(t=>(t.messages.length||t.draft?.trim())&&(!query||[t.title,t.draft||'',...t.messages.map(m=>m.text||'')].join(' ').toLowerCase().includes(query))).sort((a,b)=>String(b.updatedAt||'').localeCompare(String(a.updatedAt||'')));
+ rows.forEach(t=>{const today=dateISO(new Date()),yesterday=dateISO(dateAgo(1)),day=t.updatedAt?dateISO(new Date(t.updatedAt)):t.time?.startsWith('昨天')?yesterday:today,label=day===today?'今天':day===yesterday?'昨天':'更早';if(!groups.has(label))groups.set(label,[]);groups.get(label).push(t)});
+ return groups.size?[...groups].map(([label,threads])=>'<section class="ai-chat-history-group"><h4>'+label+'</h4><div role="listbox" aria-label="'+label+'的对话">'+threads.map(t=>'<button type="button" role="option" aria-selected="'+(t.id===app.aiThreadId)+'" class="ai-chat-history-row '+(t.id===app.aiThreadId?'active':'')+'" data-ai-thread="'+t.id+'" title="'+esc(t.title)+'"><span>'+esc(t.title)+'</span><small>'+esc(t.updatedAt?new Date(t.updatedAt).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',hour12:false}):t.time?.split(' ')[1]||'')+'</small></button>').join('')+'</div></section>').join(''):'<p class="ai-chat-history-empty">'+(query?'没有匹配的对话':'还没有历史对话')+'</p>';
+}
+function aiBindHistoryRows(){
+ $$('[data-ai-thread]').forEach(b=>b.onclick=()=>{aiCaptureDraft();app.aiThreadId=b.dataset.aiThread;app.aiInput=app.aiThreads.find(t=>t.id===app.aiThreadId)?.draft||'';app.aiHistoryOpen=false;render();$('#aiHistoryToggle')?.focus();requestAnimationFrame(scrollAIToLatest)});
+}
+function renderAIHistory(){
+ $('#aiHistoryToggle').setAttribute('aria-expanded',String(app.aiHistoryOpen));
+ $('#aiChatHistoryRoot').innerHTML=app.aiHistoryOpen?'<div id="aiChatHistoryMenu" class="ai-chat-history-menu" role="dialog" aria-label="历史对话"><div class="ai-chat-history-search"><input id="aiHistorySearch" type="search" aria-label="搜索对话" placeholder="搜索对话…" autocomplete="off" value="'+esc(app.aiHistoryQuery||'')+'">'+icon('search')+'</div><div id="aiChatHistoryList" class="ai-chat-history-list">'+aiHistoryHTML()+'</div><button type="button" class="ai-chat-history-new" id="aiHistoryNew">'+icon('plus')+'新对话</button></div>':'';
+ aiBindHistoryRows();
+ if($('#aiHistorySearch'))$('#aiHistorySearch').oninput=e=>{app.aiHistoryQuery=e.target.value;$('#aiChatHistoryList').innerHTML=aiHistoryHTML();aiBindHistoryRows()};
+ if($('#aiHistoryNew'))$('#aiHistoryNew').onclick=aiNewConversation;
+ refreshIcons();
+}
+function aiCloseHistory(restore=false){app.aiHistoryOpen=false;renderAIHistory();if(restore)$('#aiHistoryToggle')?.focus()}
+function aiNewConversation(){aiCaptureDraft();app.aiThreadId=null;app.aiInput='';app.aiHistoryOpen=false;app.aiHistoryQuery='';render();(window.innerWidth>760?$('#aiInput'):$('#aiHistoryToggle'))?.focus()}
 function renderAI(){
-  const thread=app.aiThreads.find(t=>t.id===app.aiThreadId);
-  const messages=thread?.messages||[];
-  const shortcuts=AI_SHORTCUTS.map(x=>'<button type="button" data-ai-prompt="'+x[2]+'" title="'+esc(x[1])+'">'+icon(x[3])+'<span>'+esc(x[0])+'</span></button>').join('');
-  const questions=AI_QUESTIONS.map(x=>'<button type="button" data-ai-prompt="'+x[2]+'"><span>'+esc(x[0])+'</span></button>').join('');
-  const welcome='<div class="ai-welcome"><h3>有什么想了解的？</h3><section class="ai-welcome-section" aria-label="示例提问"><div class="ai-question-list">'+questions+'</div></section></div>';
-  const rows=messages.length?messages.map((m,i)=>m.role==='user'?'<div class="ai-message user"><div class="ai-bubble">'+esc(m.text)+'</div></div>':'<div class="ai-message assistant"><span class="ai-avatar">'+icon('sparkles')+'</span><div class="ai-bubble">'+renderAIAnswer(m,i,messages)+'</div></div>').join(''):welcome;
-  const conversation='<div class="ai-conversation"><div class="ai-messages" id="aiMessages" role="log" aria-label="对话内容">'+rows+'</div><div class="ai-composer-wrap"><div class="ai-quickbar" role="group" aria-label="常用操作"><div class="ai-quick-grid">'+shortcuts+'</div></div><div class="ai-composer"><textarea id="aiInput" rows="1" aria-label="向知言提问" placeholder="输入你的问题">'+esc(app.aiInput)+'</textarea><button class="ai-send" id="aiSend" type="button" aria-label="发送消息" title="发送消息" '+(app.aiInput.trim()?'':'disabled')+'>'+icon('arrow-up')+'</button></div></div></div>';
-  return '<div class="ai-workspace '+(app.aiHistoryOpen?'history-open':'')+'"><button type="button" class="ai-history-scrim" id="aiHistoryScrim" aria-label="关闭历史会话"></button><aside class="ai-history" aria-label="历史会话"><div class="ai-history-head"><div><h2>历史会话</h2><small>'+app.aiThreads.length+' 条对话</small></div><button class="icon-button" id="aiHistoryClose" type="button" aria-label="关闭历史会话">'+icon('x')+'</button></div><div class="ai-history-list">'+app.aiThreads.map(t=>'<button class="ai-history-item '+(t.id===app.aiThreadId?'active':'')+'" data-ai-thread="'+t.id+'" aria-label="'+esc(t.title)+'" title="'+esc(t.title)+'"><strong>'+esc(t.title)+'</strong></button>').join('')+'</div></aside><section class="ai-main" '+(app.aiHistoryOpen?'inert':'')+'>'+conversation+'</section></div>';
+ const thread=app.aiThreads.find(t=>t.id===app.aiThreadId),messages=thread?.messages||[];
+ const shortcuts=AI_SHORTCUTS.map(x=>'<button type="button" data-ai-prompt="'+x[2]+'" title="'+esc(x[1])+'">'+icon(x[3])+'<span>'+esc(x[0])+'</span></button>').join('');
+ const starters=[...AI_QUESTIONS,['今天哪些事情需要先处理？','今日待办','overview','list-checks']];
+ const questions=starters.map(x=>'<button type="button" data-ai-prompt="'+x[2]+'"><span class="ai-starter-icon">'+icon(x[3])+'</span><span>'+esc(x[0])+'</span></button>').join('');
+ const welcome='<div class="ai-welcome"><img src="assets/ai-assistant-launcher.png" alt=""><h3>你好，有什么可以帮你？</h3><div class="ai-question-list" aria-label="开场问题">'+questions+'</div></div>';
+ const rows=messages.length?messages.map((m,i)=>m.role==='user'?'<div class="ai-message user"><div class="ai-bubble">'+esc(m.text)+'</div></div>':'<div class="ai-message assistant"><div class="ai-bubble">'+renderAIAnswer(m,i,messages)+'</div></div>').join(''):welcome;
+ return '<div class="ai-workspace"><section class="ai-main"><div class="ai-conversation"><div class="ai-messages" id="aiMessages" role="log" aria-live="polite" aria-label="对话记录">'+rows+'</div><div class="ai-composer-wrap"><div class="ai-quickbar" role="group" aria-label="常用操作"><div class="ai-quick-grid">'+shortcuts+'</div></div><div class="ai-composer"><textarea id="aiInput" rows="2" maxlength="600" aria-label="向知言提问" placeholder="描述需求，或继续补充信息">'+esc(app.aiInput)+'</textarea><button class="ai-send" id="aiSend" type="button" aria-label="发送消息" title="发送消息" '+(app.aiInput.trim()?'':'disabled')+'>'+icon('send')+'</button></div></div></div></section></div>';
 }
 function renderAIPopup(){
-  const host=$('#aiPanelContent'),old=$('#aiMessages'),sameThread=host.dataset.threadId===String(app.aiThreadId||''),scrollTop=old?.scrollTop||0;
-  host.innerHTML=renderAI();host.dataset.threadId=String(app.aiThreadId||'');
-  const current=$('#aiMessages');if(current&&old)current.scrollTop=sameThread?scrollTop:0;
-  $('#aiHistoryToggle').setAttribute('aria-expanded',String(app.aiHistoryOpen));
+ const host=$('#aiPanelContent'),old=$('#aiMessages'),sameThread=host.dataset.threadId===String(app.aiThreadId||''),scrollTop=old?.scrollTop||0;
+ host.innerHTML=renderAI();host.dataset.threadId=String(app.aiThreadId||'');
+ const current=$('#aiMessages');if(current&&old)current.scrollTop=sameThread?scrollTop:0;
+ const thread=app.aiThreads.find(t=>t.id===app.aiThreadId);$('#aiDialogTitle').textContent=thread?.messages.length?thread.title:'新对话';renderAIHistory();
 }
 function scrollAIToLatest(){
   const scroller=$('#aiMessages'),last=scroller?.querySelector('.ai-message:last-child');
@@ -2471,93 +2510,22 @@ function syncAIPanelMode(){
   if((mobile&&$('#aiOverlay').classList.contains('open'))||$('#modalOverlay').classList.contains('open')||$('#drawerOverlay').classList.contains('open'))$('.app').setAttribute('inert','');
   else $('.app').removeAttribute('inert');
 }
-const aiLauncherButton=$('#aiLauncher');
-const aiLauncherState={x:null,y:null,dock:null,revealed:false,drag:null,suppressClickUntil:0,viewportWidth:window.innerWidth,viewportHeight:window.innerHeight};
-const clampLauncher=(value,min,max)=>Math.min(Math.max(value,min),Math.max(min,max));
-function placeAiLauncher(){
-  const size=aiLauncherButton.offsetWidth||56,vw=window.innerWidth,vh=window.innerHeight;
-  if(aiLauncherState.x===null)aiLauncherState.x=vw-size-16;
-  if(aiLauncherState.y===null)aiLauncherState.y=vh-size-18;
-  aiLauncherState.y=clampLauncher(aiLauncherState.y,8,vh-size-8);
-  if(!aiLauncherState.dock)aiLauncherState.x=clampLauncher(aiLauncherState.x,8,vw-size-8);
-  const peek=24;
-  const x=aiLauncherState.dock==='left'?(aiLauncherState.revealed?10:peek-size):aiLauncherState.dock==='right'?(aiLauncherState.revealed?vw-size-10:vw-peek):aiLauncherState.x;
-  aiLauncherButton.style.left=Math.round(x)+'px';
-  aiLauncherButton.style.top=Math.round(aiLauncherState.y)+'px';
-  aiLauncherButton.classList.toggle('is-docked',!!aiLauncherState.dock);
-  aiLauncherButton.classList.toggle('is-revealed',aiLauncherState.revealed);
-}
-function saveAiLauncherPosition(){
-  try{localStorage.setItem('reputationAiLauncherPosition',JSON.stringify({x:aiLauncherState.x,y:aiLauncherState.y,dock:aiLauncherState.dock,vw:window.innerWidth,vh:window.innerHeight}))}catch(e){}
-}
-function finishAiLauncherDrag(){
-  const drag=aiLauncherState.drag;if(!drag)return;
-  aiLauncherState.drag=null;aiLauncherButton.classList.remove('is-dragging');
-  if(!drag.moved)return;
-  const size=aiLauncherButton.offsetWidth||56,center=aiLauncherState.x+size/2,vw=window.innerWidth;
-  aiLauncherState.dock=center<=78?'left':vw-center<=78?'right':null;
-  aiLauncherState.revealed=false;aiLauncherState.suppressClickUntil=Date.now()+450;
-  placeAiLauncher();saveAiLauncherPosition();
-}
-function initAiLauncher(){
-  try{const saved=JSON.parse(localStorage.getItem('reputationAiLauncherPosition')||'null');if(saved&&Number.isFinite(saved.y)){
-    aiLauncherState.x=Number.isFinite(saved.x)?saved.x*window.innerWidth/(saved.vw||window.innerWidth):null;
-    aiLauncherState.y=saved.y*window.innerHeight/(saved.vh||window.innerHeight);
-    aiLauncherState.dock=saved.dock==='left'||saved.dock==='right'?saved.dock:null;
-  }}catch(e){}
-  placeAiLauncher();
-  aiLauncherButton.addEventListener('pointerdown',e=>{
-    if(e.button!==0||!e.isPrimary)return;
-    const rect=aiLauncherButton.getBoundingClientRect();
-    aiLauncherState.drag={startX:e.clientX,startY:e.clientY,offsetX:aiLauncherState.dock?rect.width/2:e.clientX-rect.left,offsetY:e.clientY-rect.top,moved:false};
-    aiLauncherButton.setPointerCapture(e.pointerId);
-  });
-  aiLauncherButton.addEventListener('pointermove',e=>{
-    const drag=aiLauncherState.drag;if(!drag)return;
-    if(!drag.moved&&Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)<7)return;
-    if(!drag.moved){drag.moved=true;aiLauncherState.dock=null;aiLauncherState.revealed=false;aiLauncherButton.classList.add('is-dragging')}
-    const size=aiLauncherButton.offsetWidth||56;
-    aiLauncherState.x=clampLauncher(e.clientX-drag.offsetX,8,window.innerWidth-size-8);
-    aiLauncherState.y=clampLauncher(e.clientY-drag.offsetY,8,window.innerHeight-size-8);
-    placeAiLauncher();
-  });
-  aiLauncherButton.addEventListener('pointerup',finishAiLauncherDrag);
-  aiLauncherButton.addEventListener('pointercancel',finishAiLauncherDrag);
-  aiLauncherButton.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&aiLauncherState.dock&&!aiLauncherState.drag){aiLauncherState.revealed=true;placeAiLauncher()}});
-  aiLauncherButton.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'&&aiLauncherState.dock&&!aiLauncherState.drag&&!aiLauncherButton.matches(':focus-visible')){aiLauncherState.revealed=false;placeAiLauncher()}});
-  aiLauncherButton.addEventListener('focus',()=>{if(aiLauncherState.dock&&aiLauncherButton.matches(':focus-visible')){aiLauncherState.revealed=true;placeAiLauncher()}});
-  aiLauncherButton.addEventListener('blur',()=>{if(aiLauncherState.dock&&!aiLauncherButton.matches(':hover')){aiLauncherState.revealed=false;placeAiLauncher()}});
-  aiLauncherButton.addEventListener('keydown',e=>{
-    if(e.key==='ArrowLeft'||e.key==='ArrowRight'){
-      e.preventDefault();aiLauncherState.dock=e.key==='ArrowLeft'?'left':'right';aiLauncherState.revealed=true;placeAiLauncher();saveAiLauncherPosition();
-    }else if(e.key==='ArrowUp'||e.key==='ArrowDown'){
-      e.preventDefault();aiLauncherState.y+=e.key==='ArrowUp'?-40:40;placeAiLauncher();saveAiLauncherPosition();
-    }
-  });
-  aiLauncherButton.onclick=()=>{if(Date.now()<aiLauncherState.suppressClickUntil)return;openAI()};
-  window.addEventListener('resize',()=>{
-    const vw=window.innerWidth,vh=window.innerHeight;
-    if(aiLauncherState.x!==null)aiLauncherState.x*=vw/aiLauncherState.viewportWidth;
-    if(aiLauncherState.y!==null)aiLauncherState.y*=vh/aiLauncherState.viewportHeight;
-    aiLauncherState.viewportWidth=vw;aiLauncherState.viewportHeight=vh;
-    placeAiLauncher();saveAiLauncherPosition();
-  });
-}
 function openAI(){
   if($('#aiOverlay').classList.contains('open'))return;
   app.aiLastFocus=document.activeElement;
-  aiLauncherState.revealed=false;placeAiLauncher();
+  setMobileNav(false);app.aiThreadId=null;app.aiInput='';
   app.aiHistoryOpen=false;
   renderAIPopup();
-  $('#aiOverlay').classList.add('open');$('#aiOverlay').setAttribute('aria-hidden','false');$('#aiLauncher').setAttribute('aria-expanded','true');document.body.classList.add('ai-open');
-  syncAIPanelMode();bindView();refreshIcons();requestAnimationFrame(()=>$('#aiDialogTitle').focus());
+  $('#aiOverlay').classList.add('open');$('#aiOverlay').setAttribute('aria-hidden','false');$$('.ask-ai-entry').forEach(b=>b.setAttribute('aria-expanded','true'));document.body.classList.add('ai-open');
+  syncAIPanelMode();bindView();refreshIcons();requestAnimationFrame(()=>$('#aiHistoryToggle').focus());
 }
 function closeAI(restoreFocus=true){
   if(!$('#aiOverlay').classList.contains('open'))return;
-  $('#aiOverlay').classList.remove('open');$('#aiOverlay').setAttribute('aria-hidden','true');$('#aiLauncher').setAttribute('aria-expanded','false');document.body.classList.remove('ai-open');
+  aiCaptureDraft();aiCloseHistory();
+  $('#aiOverlay').classList.remove('open');$('#aiOverlay').setAttribute('aria-hidden','true');$$('.ask-ai-entry').forEach(b=>b.setAttribute('aria-expanded','false'));document.body.classList.remove('ai-open');
   app.aiHistoryOpen=false;
   syncAIPanelMode();
-  if(restoreFocus)(document.contains(app.aiLastFocus)?app.aiLastFocus:$('#aiLauncher'))?.focus?.();
+  if(restoreFocus)(document.contains(app.aiLastFocus)?app.aiLastFocus:$(isMobileView()?'#aiMobileEntry':'#aiDesktopEntry'))?.focus?.();
 }
 function aiSendPrompt(text,scenario,context={}){
   const prompt=String(text||'').trim();if(!prompt)return;
@@ -2565,7 +2533,7 @@ function aiSendPrompt(text,scenario,context={}){
   if(!thread){thread={id:'ai-'+Date.now(),title:prompt.slice(0,18),time:'刚刚',messages:[]};app.aiThreads.unshift(thread);app.aiThreadId=thread.id}
   if(!thread.messages.length)thread.title=prompt.slice(0,18);
   const query=aiQueryContext(prompt);query.reportId=/日报/.test(prompt)?'daily-0':/周报|本周/.test(prompt)?'weekly-0':'monthly-0';let kind=scenario||aiScenarioFor(prompt);if(!scenario&&kind==='unknown'&&/反馈|差评|问题/.test(prompt)&&!!sampleAssistantIssue(prompt))kind='issue';if(!scenario&&(query.unsupported||kind==='report'&&(query.periodExplicit||query.storeId!=='all'||query.platformId!=='all')))kind='unknown';thread.messages.push({role:'user',text:prompt},{role:'assistant',scenario:kind,context:query,...context});
-  thread.time='刚刚';app.aiInput='';render();requestAnimationFrame(scrollAIToLatest);
+  thread.time='刚刚';thread.updatedAt=new Date().toISOString();thread.draft='';app.aiInput='';app.aiHistoryOpen=false;render();requestAnimationFrame(scrollAIToLatest);
 }
 function aiSelectReview(id){
   const review=reviewBy(id),thread=app.aiThreads.find(t=>t.id===app.aiThreadId);
@@ -2593,7 +2561,7 @@ function aiOpenTaskForm(kind){
 }
 function aiFinishTask(id){
   const task=app.aiTasks.find(t=>t.id===id);if(!task)return;
-  openModal('记录改进结果','<p class="muted">'+esc(task.title)+'</p><div class="field"><label for="aiTaskResult">实际处理记录</label><textarea id="aiTaskResult" placeholder="填写实际核查与调整内容；未核实的结果不能写为已改善"></textarea></div>','<button class="btn-outline" data-close-modal>取消</button><button class="btn" id="aiConfirmFinish">保存并完成</button>');
+  openModal('记录改进结果','<p class="muted">'+esc(task.title)+'</p><div class="field"><label for="aiTaskResult">实际处理记录</label><textarea id="aiTaskResult" placeholder="填写核查结果与改进记录"></textarea></div>','<button class="btn-outline" data-close-modal>取消</button><button class="btn" id="aiConfirmFinish">保存并完成</button>');
   $('#aiConfirmFinish').onclick=()=>{const result=$('#aiTaskResult').value.trim();if(result.length<8){toast('请填写至少8个字的核查结果');return}task.result=result;task.status='done';closeModal();render();toast('任务已完成，处理记录已保存')};
 }
 function renderSettings(){
@@ -2635,12 +2603,10 @@ function openNotification(n){
 
 function bindView(){
   if(app.view==='ai-home')bindAIHome();
-  if($('#aiHistoryToggle'))$('#aiHistoryToggle').onclick=()=>{app.aiHistoryOpen=!app.aiHistoryOpen;render();(app.aiHistoryOpen?$('#aiHistoryClose'):$('#aiHistoryToggle'))?.focus()};
-  if($('#aiHistoryClose'))$('#aiHistoryClose').onclick=()=>{app.aiHistoryOpen=false;render();$('#aiHistoryToggle')?.focus()};
-  if($('#aiHistoryScrim'))$('#aiHistoryScrim').onclick=()=>{app.aiHistoryOpen=false;render();$('#aiHistoryToggle')?.focus()};
-  if($('#aiNewThread'))$('#aiNewThread').onclick=()=>{app.aiThreadId=null;app.aiInput='';app.aiHistoryOpen=false;render();(window.innerWidth>640?$('#aiInput'):$('#aiDialogTitle'))?.focus()};
-  $$('[data-ai-thread]').forEach(b=>b.onclick=()=>{app.aiThreadId=b.dataset.aiThread;app.aiHistoryOpen=false;render();$('#aiDialogTitle')?.focus()});
-  if($('#aiInput')){const input=$('#aiInput'),sync=()=>{app.aiInput=input.value;$('#aiSend').disabled=!input.value.trim();input.style.height='auto';input.style.height=Math.min(input.scrollHeight,110)+'px'};input.oninput=sync;input.onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();aiSendPrompt(e.target.value)}};sync()}
+  if($('#aiHistoryToggle'))$('#aiHistoryToggle').onclick=()=>{if(app.aiHistoryOpen){aiCloseHistory(true);return}aiCaptureDraft();app.aiHistoryOpen=true;app.aiHistoryQuery='';renderAIHistory();$('#aiHistorySearch')?.focus()};
+  if($('#aiNewThread'))$('#aiNewThread').onclick=aiNewConversation;
+  aiBindHistoryRows();
+  if($('#aiInput')){const input=$('#aiInput'),sync=()=>{app.aiInput=input.value;$('#aiSend').disabled=!input.value.trim();input.style.height='auto';input.style.height=Math.max(isMobileView()?120:118,Math.min(input.scrollHeight,180))+'px'};input.oninput=sync;input.onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing&&e.keyCode!==229){e.preventDefault();aiSendPrompt(e.target.value)}};sync()}
   if($('#aiSend'))$('#aiSend').onclick=()=>aiSendPrompt($('#aiInput').value);
   $$('[data-ai-prompt]').forEach(b=>b.onclick=()=>{const x=AI_PROMPTS.find(p=>p[2]===b.dataset.aiPrompt);if(x)aiSendPrompt(x[0],x[2])});
   $$('[data-ai-interpret-report]').forEach(b=>b.onclick=()=>{const row=reportById(b.dataset.aiInterpretReport);if(!row)return;openAI();aiSendPrompt('解读'+row.name,'report',{reportId:row.id})});
@@ -2662,7 +2628,7 @@ function bindView(){
   if($('#localStoreScope'))$('#localStoreScope').onchange=e=>{app.store=e.target.value;app.selectedReview=null;app.selectedRisk=null;app.selectedReport=null;render()};
   $$('[data-page-range]').forEach(b=>b.onclick=()=>{const n=Number(b.dataset.pageRange);app.range=n;app.ranges[app.view]=n;app.selectedReview=null;app.selectedRisk=null;render()});
   $$('[data-go]').forEach(b=>b.onclick=()=>{if(b.dataset.storeView)app.storeView=b.dataset.storeView;if(b.dataset.go==='reviews')resetReviewFilters();if(b.dataset.go==='risks')resetRiskFilters('all');navigate(b.dataset.go)});
-  if($('[data-home-weekly-report]'))$('[data-home-weekly-report]').onclick=()=>{app.reportTab='weekly';app.selectedReport='weekly-0';navigate('reports',true)};
+  if($('[data-home-weekly-report]'))$('[data-home-weekly-report]').onclick=()=>{app.reportTab='weekly';app.selectedReport=reportRows()[0]?.id;opsResetReportFilters();navigate('reports',true)};
   $$('.clickable-row').forEach(row=>row.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();row.click()}});
   $$('[data-kpi]').forEach(b=>b.onclick=()=>{const target=b.dataset.kpi,filter=b.dataset.filter;if(filter==='auto-today'){openAutoReplies('today');return}if(target==='reviews'){resetReviewFilters();if(filter==='new'||filter==='bad')app.reviewFilters.period='today';if(filter==='bad'||filter==='bad-pending')app.reviewFilters.sentiment='bad';if(filter==='pending'||filter==='bad-pending')app.reviewFilters.status='pending'}if(target==='risks'){resetRiskFilters();app.riskTab='pending';app.riskSeverity=filter==='high'?'high':'all'}navigate(target)});
   $$('[data-auto-replies]').forEach(b=>b.onclick=()=>openAutoReplies());
@@ -2672,7 +2638,6 @@ function bindView(){
   $$('[data-store-id]').forEach(b=>b.onclick=()=>{app.selectedStore=b.dataset.storeId;app.storeView='detail';navigate('stores')});
   $$('[data-open-review]').forEach(b=>b.onclick=()=>{resetReviewFilters();app.selectedReview=b.dataset.openReview;navigate('reviews',true)});
   $$('[data-select-review]').forEach(b=>b.onclick=()=>{app.selectedReview=b.dataset.selectReview;showMobileDetail('reviews')});
-  if($('#toggleReviewFilters'))$('#toggleReviewFilters').onclick=()=>{app.reviewFiltersOpen=!app.reviewFiltersOpen;render()};
   bindListFilterControls('reviews',{reviewSearch:'q',reviewStore:'store',reviewPlatform:'platform',reviewSentiment:'sentiment',reviewIssue:'issue'});
   if($('#reviewStatus'))$('#reviewStatus').onchange=e=>{const f=listFilterDraft('reviews');f.status=e.target.value;if(f.status==='pending'){f.replyOrigin='all';f.replyDateFrom='';f.replyDateTo=''}render()};
   if($('#reviewReplyOrigin'))$('#reviewReplyOrigin').onchange=e=>{const f=listFilterDraft('reviews');f.replyOrigin=e.target.value;if(e.target.value!=='all')f.status='replied';render()};
@@ -2692,14 +2657,14 @@ function bindView(){
   $$('[data-appeal]').forEach(b=>b.onclick=()=>openAppealRecord(b.dataset.appeal));
   $$('[data-risk-stat]').forEach(b=>b.onclick=()=>{const target=b.dataset.riskStat,platform=app.riskPlatform,from=app.riskDateFrom,to=app.riskDateTo;resetRiskFilters();app.riskPlatform=platform;app.riskDateFrom=from;app.riskDateTo=to;if(target==='high'){app.riskSeverity='high';app.riskTab='open'}else app.riskTab=target;render()});
   if($('#toggleRiskFilters'))$('#toggleRiskFilters').onclick=()=>{app.riskFiltersOpen=!app.riskFiltersOpen;render()};
-  bindListFilterControls('risks',{riskSearch:'q',riskStore:'store',riskPlatform:'platform',riskStatus:'status',riskIssue:'issue',riskSeverity:'severity'});
+  bindListFilterControls('risks',{riskSearch:'q',riskStore:'store',riskPlatform:'platform',riskStatus:'status',riskSeverity:'severity'});
   if($('#applyRiskFilters'))$('#applyRiskFilters').onclick=()=>applyListFilters('risks');
   if($('#resetRiskFilters'))$('#resetRiskFilters').onclick=()=>{resetRiskFilters();app.store='all';render()};
   $$('[data-risk-page]').forEach(b=>b.onclick=()=>{app.riskPage=Number(b.dataset.riskPage);app.selectedRisk=null;render()});
   $$('[data-select-risk]').forEach(b=>b.onclick=()=>{if(!isActiveRisk(reviewBy(b.dataset.selectRisk))){openRiskView(b.dataset.selectRisk);return}app.selectedRisk=b.dataset.selectRisk;showMobileDetail('risks')});
   $$('[data-open-risk]').forEach(b=>b.onclick=()=>openRiskDetail(b.dataset.openRisk));
   $$('[data-risk-source-review]').forEach(b=>b.onclick=()=>openRiskSourceReview(b.dataset.riskSourceReview));
-  $$('[data-dimension]').forEach(b=>b.onclick=()=>{const period=Number(b.dataset.aiDays)||(app.view==='analysis'?app.range:30);resetReviewFilters();app.store=b.dataset.aiStore||'all';app.reviewFilters.platform=b.dataset.aiPlatform||'all';if(b.dataset.aiSentiment)app.reviewFilters.sentiment=b.dataset.aiSentiment;app.reviewPage=1;app.selectedReview=null;app.reviewFilters.period=period;app.reviewFilters.issue=b.dataset.dimension;if($('#aiOverlay')?.classList.contains('open'))closeAI(false);navigate('reviews')});
+  $$('[data-dimension]').forEach(b=>b.onclick=()=>{const period=Number(b.dataset.aiDays)||(app.view==='analysis'?app.range:30);resetReviewFilters();app.store=b.dataset.aiStore||'all';app.reviewFilters.platform=b.dataset.aiPlatform||'all';if(b.dataset.aiSentiment)app.reviewFilters.sentiment=b.dataset.aiSentiment;app.reviewPage=1;app.selectedReview=null;app.reviewFilters.period=period;app.reviewFilters.issue=b.dataset.dimension;if(app.view==='analysis'&&!b.dataset.aiSentiment)app.reviewFilters.sentiment='bad';if($('#aiOverlay')?.classList.contains('open'))closeAI(false);navigate('reviews')});
   $$('[data-analysis-section]').forEach(b=>b.onclick=()=>{app.analysisSection=b.dataset.analysisSection;render()});
   $$('[data-analysis-toggle]').forEach(b=>b.onclick=()=>{const detail=document.getElementById(b.dataset.analysisToggle);if(!detail)return;const expanded=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!expanded));detail.hidden=expanded});
   $$('[data-open-issue]').forEach(b=>b.onclick=()=>openIssueDetail(b.dataset.openIssue));
@@ -2750,7 +2715,7 @@ function bindView(){
   $$('[data-mark-read]').forEach(b=>b.onclick=()=>{const n=app.notifications.find(x=>x.id===b.dataset.markRead);if(n)n.read=true;render()});
   $$('[data-open-notice]').forEach(b=>b.onclick=()=>{const n=app.notifications.find(x=>x.id===b.dataset.openNotice);if(n)openNotification(n)});
   if($('[data-read-all]'))$('[data-read-all]').onclick=()=>{app.notifications.forEach(n=>n.read=true);render();toast('全部消息已标为已读')};
-  if($('[data-back-home]'))$('[data-back-home]').onclick=()=>navigate('home');
+  if($('[data-back-home]'))$('[data-back-home]').onclick=()=>navigate('ai-home');
 }
 function replyValidation(r,text){
   if(!r||!isReplyPending(r))return '该评价已回复，请刷新后查看';
@@ -2764,7 +2729,7 @@ function confirmReply(id){
   const r=reviewBy(id),text=$('#replyEditor').value.trim(),error=replyValidation(r,text);
   if(error){toast(error);return}
   app.pendingReply={reviewId:id,text};
-  openModal('确认回复','<div class="detail-text">'+esc(text)+'</div><div class="ai-box warn" style="margin-top:12px"><strong>发布确认</strong>回复将提交至'+platformBy(r.platformId)?.name+'。仅在平台返回成功后，系统才会更新为“已回复”。</div>','<button class="btn-outline" data-close-modal>取消</button><button class="btn" data-publish-reply="'+id+'">确认发布</button>');
+  openModal('确认回复','<div class="detail-text">'+esc(text)+'</div><div class="ai-box warn" style="margin-top:12px"><strong>发布确认</strong>回复将提交至'+platformBy(r.platformId)?.name+'。</div>','<button class="btn-outline" data-close-modal>取消</button><button class="btn" data-publish-reply="'+id+'">确认发布</button>');
 }
 function publishReply(id){
   const r=reviewBy(id),pending=app.pendingReply,text=pending?.reviewId===id?pending.text:'',error=replyValidation(r,text);
@@ -2792,18 +2757,7 @@ function openAppealRecord(id){
   openModal('登记平台申诉',body,'<button class="btn-outline" data-close-modal>取消</button><button class="btn" data-save-appeal="'+id+'" disabled>保存受理记录</button>');
   $('#appealText').oninput=()=>{$('[data-save-appeal]').disabled=$('#appealText').value.trim().length<8};
 }
-function exportReport(id){
-  const row=reportRows().find(x=>x.id===id);if(!row)return;
-  if(app.selectedReport!==id){toast('请先打开要导出的报告');return}
-  const source=$('.report-preview');if(!source){toast('报告内容暂不可用');return}
-  const copy=source.cloneNode(true),sourceCharts=source.querySelectorAll('canvas');
-  copy.querySelectorAll('canvas').forEach((canvas,i)=>{const img=document.createElement('img');img.src=chartBaseImageURL(sourceCharts[i]);img.alt=sourceCharts[i].getAttribute('aria-label')||'评价趋势图';img.style='display:block;width:100%;height:auto';canvas.replaceWith(img)});
-  copy.querySelectorAll('.chart-hover-tooltip').forEach(tooltip=>tooltip.remove());
-  copy.querySelector('.page-actions')?.remove();
-  const styles=[...document.querySelectorAll('style')].map(style=>style.textContent).join('\n');
-  const html='<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+esc(row.name)+'</title><style>'+styles+'\nbody{display:block;background:#f5f7fc;padding:24px}.report-preview{max-width:1100px;margin:0 auto}.report-preview .report-table-wrap{overflow-x:auto}@media print{body{padding:0;background:#fff}.report-preview{box-shadow:none;border:0}.report-section{break-inside:avoid}}</style></head><body>'+copy.outerHTML+'</body></html>';
-  const url=URL.createObjectURL(new Blob([html],{type:'text/html;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download=row.name+'.html';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('报告文件已导出');
-}
+function exportReport(id){return exportReportPDF(id)}
 function reportShareUrl(id){
   const url=new URL(window.location.href);
   url.search='';url.hash='';url.searchParams.set('report',id);
@@ -2834,7 +2788,7 @@ function setMobileNav(open){
 }
 $$('[data-view]').forEach(b=>b.onclick=()=>{setMobileNav(false);if(b.dataset.view==='stores')app.storeView='list';if(b.dataset.view==='reviews')resetReviewFilters();if(b.dataset.view==='risks')resetRiskFilters('all');navigate(b.dataset.view)});
 $('#noticeButton').onclick=()=>{setMobileNav(false);navigate('notifications')};
-$('#mobileNoticeButton').onclick=()=>{setMobileNav(false);navigate('notifications')};
+
 $('#mobileMenuButton').onclick=()=>{if(isMobileView()&&mobileSubpage()){backMobileSubpage();return}setMobileNav(!$('.app').classList.contains('mobile-nav-open'))};
 $('#mobileDrawerClose').onclick=()=>setMobileNav(false);
 $('#mobileNavOverlay').onclick=()=>setMobileNav(false);
@@ -2869,10 +2823,14 @@ document.addEventListener('click',e=>{
   if(t.dataset.exportReport)exportReport(t.dataset.exportReport);
   if(t.dataset.shareReport)openReportShare(t.dataset.shareReport);
 });
-initAiLauncher();
+$$('.ask-ai-entry').forEach(button=>button.onclick=()=>$('#aiOverlay').classList.contains('open')?closeAI():openAI());
 $('#aiClose').onclick=()=>closeAI();
 $('#aiOverlay').onclick=e=>{if(e.target.id==='aiOverlay')closeAI()};
 window.addEventListener('resize',syncAIPanelMode);
+function syncAIViewport(){const vv=window.visualViewport;document.documentElement.style.setProperty('--ai-visible-height',(vv?.height||window.innerHeight)+'px');document.documentElement.style.setProperty('--ai-vv-top',(vv?.offsetTop||0)+'px')}
+window.visualViewport?.addEventListener('resize',syncAIViewport);window.visualViewport?.addEventListener('scroll',syncAIViewport);window.addEventListener('resize',syncAIViewport);syncAIViewport();
+document.addEventListener('click',e=>{if(app.aiHistoryOpen&&!e.target.closest('#aiChatHistoryMenu,#aiHistoryToggle'))aiCloseHistory()});
+document.addEventListener('keydown',e=>{if(!app.aiHistoryOpen||!['ArrowDown','ArrowUp'].includes(e.key))return;const rows=$$('.ai-chat-history-row');if(!rows.length)return;e.preventDefault();const i=rows.indexOf(document.activeElement),next=i<0?(e.key==='ArrowDown'?0:rows.length-1):(i+(e.key==='ArrowDown'?1:-1)+rows.length)%rows.length;rows[next].focus()});
 document.addEventListener('keydown',e=>{
   const activeLayer=$('#modalOverlay').classList.contains('open')?$('#modalOverlay .modal'):$('#drawerOverlay').classList.contains('open')?$('#drawerOverlay .drawer'):($('#aiOverlay').classList.contains('open')&&window.matchMedia('(max-width:760px)').matches)?$('#aiOverlay .ai-dialog'):$('.app').classList.contains('mobile-nav-open')?$('.sidebar'):null;
   if(e.key==='Tab'&&activeLayer){const focusable=$$('button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])',activeLayer).filter(el=>el.offsetParent!==null&&!el.closest('[inert]'));if(focusable.length){const first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}return}
@@ -2880,7 +2838,7 @@ document.addEventListener('keydown',e=>{
   if($('.app').classList.contains('mobile-nav-open'))setMobileNav(false);
   else if($('#modalOverlay').classList.contains('open'))closeModal();
   else if($('#drawerOverlay').classList.contains('open'))closeDrawer();
-  else if($('#aiOverlay').classList.contains('open')&&app.aiHistoryOpen){app.aiHistoryOpen=false;render();$('#aiHistoryToggle')?.focus()}
+  else if($('#aiOverlay').classList.contains('open')&&app.aiHistoryOpen){aiCloseHistory(true)}
   else if($('#aiOverlay').classList.contains('open'))closeAI();
   else if(isMobileView()&&mobileSubpage())backMobileSubpage();
   $('#userPop').classList.add('hidden');
@@ -2892,7 +2850,7 @@ let sidebarCollapsed=false;try{sidebarCollapsed=localStorage.getItem('reputation
 const initialReportTab=app.reportTab;['daily','weekly','monthly'].forEach(tab=>{app.reportTab=tab;reportRows()});app.reportTab=initialReportTab;
 const linkedReport=reportById(new URLSearchParams(location.search).get('report'));
 if(linkedReport){app.view='reports';app.reportTab=linkedReport.id.split('-')[0];app.selectedReport=linkedReport.id}
-$('#brandLogo').src=ASSETS.logo;$('#mobileBrandLogo').src=ASSETS.logo;$('#loginBrandLogo').src=ASSETS.logo;$('#userAvatarImg').src=ASSETS.avatar;$('#userMenuAvatar').src=ASSETS.avatar;setSidebarCollapsed(sidebarCollapsed,false);navigate(app.view,!!linkedReport);
+$('#brandLogo').src=ASSETS.logo;$('#mobileBrandLogo').src=ASSETS.logo;$('#loginBrandLogo').src=ASSETS.logo;$('#userAvatarImg').src=ASSETS.avatar;$('#userMenuAvatar').src=ASSETS.avatar;setSidebarCollapsed(sidebarCollapsed,false);initOpsUpgrade();navigate(app.view,!!linkedReport);
 </script>
 </body>
 </html>
