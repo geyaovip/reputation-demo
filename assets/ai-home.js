@@ -171,8 +171,10 @@ function aihSizeTaskList(){
  const contentHeight=rows.reduce((sum,row)=>sum+row.offsetHeight,0)+Math.max(0,rows.length-1)*gap+(parseFloat(style.paddingTop)||0)+(parseFloat(style.paddingBottom)||0);
  if(window.innerWidth<=1000){root.style.removeProperty('--aih-panel-height');const limit=Math.min(contentHeight,Math.round(window.innerHeight*.55));if(limit)list.style.maxHeight=limit+'px';return}
  list.style.removeProperty('max-height');
- const top=$('.aih-layout').getBoundingClientRect().top+window.scrollY,available=Math.max(300,window.innerHeight-top-24);
- const height=Math.round(Math.min(contentHeight+$('.aih-pool .aih-section-heading').offsetHeight+$('#opsRadarPanel').offsetHeight+2,available));
+ const top=$('.aih-layout').getBoundingClientRect().top+window.scrollY,fixedHeight=$('.aih-pool .aih-section-heading').offsetHeight+$('#opsRadarPanel').offsetHeight+2;
+ const firstRowHeight=(rows[0]?.offsetHeight||0)+(parseFloat(style.paddingTop)||0)+(parseFloat(style.paddingBottom)||0);
+ const available=Math.max(fixedHeight+firstRowHeight,window.innerHeight-top-24);
+ const height=Math.round(Math.min(contentHeight+fixedHeight,available));
  if(height&&root.style.getPropertyValue('--aih-panel-height')!==height+'px')root.style.setProperty('--aih-panel-height',height+'px');
 }
 function aihSwitchTodo(tab,focus=false){if(!['risks','reviews'].includes(tab))return;aiHomeState.todoTab=tab;const list=$('#aihTodoList');list.innerHTML='';delete list.dataset.html;list.scrollTop=0;aiHomeUpdateScene(true);if(focus)$('#aihTodoTab-'+tab).focus({preventScroll:true})}

@@ -17,10 +17,10 @@
 
 ## 技术实现
 
-- 原生 HTML、CSS、JavaScript，无需安装依赖或执行构建。
-- 静态资源随仓库提供，可通过普通 HTTP 服务预览。
+- 单文件 HTML，样式、脚本、图标及图片均已内嵌；无需安装依赖或执行构建。
+- 可单独发送 `index.html` 并用浏览器打开，也可通过普通 HTTP 服务预览。
 - Cloudflare Pages 托管前端，运行时不依赖云服务器。
-- Lucide 图标脚本固定在仓库内，第三方许可见[许可文件](assets/LUCIDE-LICENSE.txt)。
+- Lucide 图标库及许可已内嵌，第三方许可同时保留在[许可文件](assets/LUCIDE-LICENSE.txt)。
 
 ## 本地运行
 
@@ -36,9 +36,11 @@ python3 -m http.server 8795 --bind 127.0.0.1
 
 | 路径 | 用途 |
 | --- | --- |
-| [`index.html`](index.html) | 页面、样式、业务展示逻辑与演示数据 |
-| [`assets/`](assets/) | 本地图标和页面所需资源 |
+| [`index.html`](index.html) | 可独立转发的完整页面，含样式、脚本、图片与演示数据 |
+| [`assets/`](assets/) | 历史拆分资源备份；页面运行不再引用 |
 | [`_headers`](_headers) | 静态托管响应头配置 |
+
+后续修改以 `index.html` 内嵌内容为准，仅修改 `assets` 不会生效。
 
 ## 部署说明
 
